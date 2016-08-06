@@ -4,15 +4,14 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   # The rest of this lab took about 20 minutes.
-  # This one block took at least an hour and a half because I kept coming at it from the wrong direction.
+  # This one block took at least an hour and a half
+  # because I kept coming at it from the wrong direction.
   # Boy, does it feel good to see those tests come back green.
   else
     the_line = "The line is currently:"
-    counter = 0
-      while counter < katz_deli.length
-        the_line.concat(" #{counter + 1}. #{katz_deli[counter]}")
-        counter += 1
-      end
+    katz_deli.each_with_index do |person, i|
+      the_line.concat(" #{i + 1}. #{person}")
+    end
     puts "#{the_line}"
   end
 end
