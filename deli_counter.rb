@@ -1,5 +1,6 @@
 # Write your code here.
 katz_deli = []
+other_deli = []
 
 def line( katz_deli )
   if katz_deli == []
@@ -9,13 +10,15 @@ def line( katz_deli )
   end
 end
 
-def take_a_number(katz_deli, name )
-  katz_deli.push(name)
-  katz_deli.each_with_index do |name, index|
-    puts "Welcome, #{name}. You are number #{index + 1} in line."
-  end
+def take_a_number( deli, name )
+  deli.push( name )
+    puts "Welcome, #{name}. You are number #{deli.length} in line."
 end
 
-def now_serving(katz_deli)
-  "There is nobody waiting to be served!"
+def now_serving( deli )
+  if deli == []
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{ deli.shift }."
+  end
 end
