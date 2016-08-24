@@ -7,10 +7,8 @@ if deli == []
   puts "The line is currently empty."
 else
   output = "The line is currently:"
-  number = 1
-  deli.each do |name|
-    output << " #{number}. #{name}"
-    number += 1
+  deli.each_with_index do |name, index|
+    output << " #{index+1}. #{name}"
   end
   puts output
 end
