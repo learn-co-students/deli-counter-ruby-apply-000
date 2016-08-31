@@ -1,7 +1,9 @@
 # Write your code here.
-deli = []
-line_length = 1
 
+#create the empty array
+deli = []
+
+#displays the line, or says that the line is empty
 def line(deli)
 if deli == []
   puts "The line is currently empty."
@@ -14,14 +16,14 @@ else
 end
 end
 
-
+#adds the person to the array and says what number in line they are
 def take_a_number (deli, name)
   deli << name
   puts "Welcome, #{name}. You are number #{deli.length} in line."
   return deli
 end
 
-
+#uses shift because they need to come out of the array - they're being served
 def now_serving (deli)
 if deli == []
   puts "There is nobody waiting to be served!"
@@ -32,8 +34,9 @@ end
 return deli
 end
 
+=begin
+for an object oriented solution:
 
-#for an object oriented solution
 class Deli
 def initialize
 @line = []
@@ -44,10 +47,10 @@ def print_line
       puts "The Line is currently empty"
     else
       output = "The line is currently:"
-      number = 1
-      @line.each do |name|
-        output << " #{number}. #{name}"
-        number += 1
+
+      @line.each_with_index do |name, index|
+        output << " #{index+1}. #{name}"
+
       end
       puts output
 end
@@ -67,3 +70,4 @@ end
 
 end
 end
+=end
