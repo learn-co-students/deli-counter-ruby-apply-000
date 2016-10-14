@@ -8,8 +8,8 @@ def line(katz_deli)
     string = "The line is currently:"
     loop do
       person = katz_deli[i]
-      i = i + 1
-      string = string + " #{i}. #{person}"
+      i += 1
+      string << " #{i}. #{person}"
       if !katz_deli[i]
         break
       end
