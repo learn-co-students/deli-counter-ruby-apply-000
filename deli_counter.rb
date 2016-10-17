@@ -1,15 +1,15 @@
 def line(array)
-  if array.empty?
-    puts "The line is currently empty."
-  else
-    output = "The line is currently:"
-    number = 1
-    array.each do |name|
-      output += " "+(number).to_s + ". " + name
-      number += 1
-    end
-    puts output
-  end
+ if array.empty?
+   puts "The line is currently empty."
+ else
+   output = "The line is currently:"
+   number = 1
+   array.each do |name|
+     output += " #{number}. #{name}"
+     number += 1
+   end
+   puts output
+ end
 end
 
 def take_a_number(array, name)
