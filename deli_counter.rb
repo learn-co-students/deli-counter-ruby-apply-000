@@ -1,18 +1,17 @@
 def line(array)
-  string = ""
+  string = "The line is currently:"
   i = 0
 
-  if array.length==0
+  if array.length == 0
     puts "The line is currently empty."
   elsif array.length> 0
     while i < array.length
-      string = string + " " + (i+1).to_s + ". " + array[i]
-      i +=1
+      string += " " + (i+1).to_s + ". " + array[i]
+      i+=1
     end
-      puts "The line is currently:" + string
+    puts string
   end
 end
-
 
 def take_a_number(array,name)
   array << name
@@ -21,7 +20,7 @@ end
 
 def now_serving(array)
   if array.length > 0
-    puts "Currently serving " + array[0].to_s + "."
+    puts "Currently serving " + array[0] + "."
     array.shift
   else
     puts "There is nobody waiting to be served!"
