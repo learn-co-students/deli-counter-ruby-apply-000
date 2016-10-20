@@ -3,12 +3,12 @@ def line(line_array)
     puts "The line is currently empty."
   else
     idx = 1
-    line_string = "The line is currently: "
+    line_string = "The line is currently:"
     line_array.each do |name|
-      line_string += "#{idx.to_s}. #{name} "
+      line_string += " #{idx.to_s}. #{name}"
       idx += 1
     end
-    puts line_string.chop
+    puts line_string
   end
 end
 
