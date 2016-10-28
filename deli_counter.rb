@@ -1,3 +1,4 @@
+# Write your code here.
 katz_deli = []
 
 def line(katz_deli)
@@ -8,19 +9,19 @@ else
 end
 end
 
-def take_a_number(array, name)
+def take_a_number(katz_deli, name)
 
-  array << name
-  puts "Welcome, #{name}. You are number #{array.length} in line."
+  katz_deli << name
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
-def now_serving(array)
-  if array.empty?
+def now_serving(katz_deli)
+  if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   else
-    current_customer = array.at(0)
+    current_customer = katz_deli.at(0)
     puts "Currently serving #{current_customer}."
-    array.shift
+    katz_deli.shift
 
   end
 end
