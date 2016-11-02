@@ -1,23 +1,3 @@
-## Write your code here.
-#def line (array)
-#  if array.count > 0
-#    array.each do |x|
-#      puts
-#  elsif array.count == 0
-#    puts "The line is currently empty."
-#  else
-#    raise "Invalid argument, you should put in an array."
-#  end
-#end
-#
-#def take_a_number(array = katz_deli, name)
-#  array << name
-#  return array[-1]
-#end
-#
-#def now_serving()
-
-
 def line(katz_deli)
   positions = ""
   if katz_deli.count < 1
