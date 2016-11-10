@@ -9,24 +9,24 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number #{position} in line."
 end
 
-
 def line(array)
-
-	if array.length == 0
-		puts "The line is currently empty."
+	if array.length > 0
+    message = "The line is currently:"
+    array.each_index do |index|
+      message = "#{message} #{index+1}. #{array[index]}"
+    end
+    puts "#{message}"
 	else
-	message = "The line is currently:"
-	array.each_index do |index|
-		message = "#{message} #{index+1}. #{array[index]}"
+    message = "The line is currently empty."
+    	puts "#{message}"
 	end
-	end
-	puts message
 end
 
 def now_serving(array)
-  if array.length == 0
-    return "The line is currently empty."
+  if array.length > 0
+    name = array.shift
+    puts "Currently serving #{name}."
+  else
+    puts "There is nobody waiting to be served!"
   end
-	name = array.shift
-	puts "Currently serving: #{name}"
 end
