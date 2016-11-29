@@ -5,11 +5,9 @@ def line(array)
 
   else
     array.each.with_index do |nam,idx|
-      arr << "#{idx+1}."
-      arr << nam
+      arr << "#{idx+1}. #{nam}"
     end
      puts "The line is currently: #{arr.join(" ")}"
-
   end
 end
 def take_a_number(array,name)
