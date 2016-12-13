@@ -1,23 +1,20 @@
-katz_deli = []
-
-def line(katz_deli)
-  if katz_deli.length == 0
+def line(line_array)
+  if line_array.length == 0
     puts "The line is currently empty."
   else
-    katz_deli.each_with_index do |item, index|
-      katz_deli[index] = "#{index + 1}. #{item}"
+    new_line_array = []
+    line_array.each_with_index do |item, index|
+      new_line_array << "#{index + 1}. #{item}"
     end
 
-    puts "The line is currently: " + katz_deli.join(' ')
+    puts "The line is currently: #{new_line_array.join(' ')}"
   end
 end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
 
-  if katz_deli.length > 0
-    puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
-  end
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 def now_serving(katz_deli)
