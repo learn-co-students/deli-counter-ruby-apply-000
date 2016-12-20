@@ -9,13 +9,13 @@ def line(deli)
       place = index + 1
       list << " #{place}. #{person}"
     end
-    puts "The line is currently:" + list
+    puts "The line is currently:#{list}"
   end
 end
 
 def take_a_number(deli, name)
-  puts "Welcome, #{name}. You are number #{deli.size + 1} in line."
   deli << name
+  puts "Welcome, #{name}. You are number #{deli.size} in line."
 end
 
 def now_serving(deli)
