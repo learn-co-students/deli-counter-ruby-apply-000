@@ -1,14 +1,12 @@
+
 katz_deli = []
 def line(katz_deli)
   if katz_deli.length == 0 then
     puts "The line is currently empty."
   else
-    count=1
-    text = "The line is currently:"
-    for person in katz_deli
-      text << " #{count}. #{person}"
-      count = count+1
-    end
+    katz = katz_deli.map.with_index{|x,i| "#{i+1}. #{x}"}
+    stringed = katz.join(" ")
+    text = "The line is currently: #{stringed}"
     puts text
   end
 end
