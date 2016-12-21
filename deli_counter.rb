@@ -10,7 +10,7 @@ end
 katz_deli = [] #array from above
 def take_a_number(katz_deli, name) #need two arguments but why? B/c adding someone into line?
   katz_deli << name #adding Ada to line/string, '<<' is 'shovel_method which allows to add to end of array'
-  puts "Welcome, #{name}. You are number #{(katz_deli.index(name))+1} in line." #I dont understand index bracket...
+  puts "Welcome, #{name}. You are number #{katz_deli.size} in line." #I dont understand index bracket...
 end
 
 def now_serving(katz_deli)
