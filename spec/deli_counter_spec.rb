@@ -1,6 +1,6 @@
 describe 'Deli Counter' do
 
-  let(:katz_deli) { [] }
+  let(:schwartz_deli) { [] }
   let(:other_deli) { ["Logan", "Avi", "Spencer"] }
 
   describe "#line" do
@@ -9,7 +9,7 @@ describe 'Deli Counter' do
         # This line checks the current standard output (your terminal screen)
         # to make sure the correct output has been puts'ed.
         expect($stdout).to receive(:puts).with("The line is currently empty.")
-        line(katz_deli)
+        line(schwartz_deli)
       end
     end
 
@@ -24,9 +24,9 @@ describe 'Deli Counter' do
   describe "#take_a_number" do
     context "there is nobody in line" do
       it "should add a person to the line" do
-        expect($stdout).to receive(:puts).with("Welcome, Ada. You are number 1 in line.")
-        take_a_number(katz_deli, "Ada")
-        expect(katz_deli).to eq(["Ada"])
+        expect($stdout).to receive(:puts).with("Bienvenue, Ada. You are number 1 in line.")
+        take_a_number(schwartz_deli, "Ada")
+        expect(schwartz_deli).to eq(["Ada"])
       end
     end
 
@@ -34,7 +34,7 @@ describe 'Deli Counter' do
       it "should add a person to the end of the line" do
         # This weird looking %w syntax is just another way to instantiate an
         # Array. %w(item1 item2) is equivalent to ["item1", "item2"]
-        expect($stdout).to receive(:puts).with("Welcome, Grace. You are number 4 in line.")
+        expect($stdout).to receive(:puts).with("Bienvenue, Grace. You are number 4 in line.")
         take_a_number(other_deli, "Grace")
         expect(other_deli).to eq(%w(Logan Avi Spencer Grace))
       end
@@ -42,10 +42,10 @@ describe 'Deli Counter' do
 
     context "adding multiple people in a row" do
       it "should correctly build the line" do
-        take_a_number(katz_deli, "Ada")
-        take_a_number(katz_deli, "Grace")
-        take_a_number(katz_deli, "Kent")
-        expect(katz_deli).to eq(%w(Ada Grace Kent))
+        take_a_number(schwartz_deli, "Ada")
+        take_a_number(schwartz_deli, "Grace")
+        take_a_number(schwartz_deli, "Kent")
+        expect(schwartz_deli).to eq(%w(Ada Grace Kent))
       end
     end
   end
@@ -54,7 +54,7 @@ describe 'Deli Counter' do
     context "there are no people in line" do
       it "should say that the line is empty" do
         expect($stdout).to receive(:puts).with("There is nobody waiting to be served!")
-        now_serving(katz_deli)
+        now_serving(schwartz_deli)
       end
     end
 
