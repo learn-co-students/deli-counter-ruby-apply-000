@@ -1,5 +1,3 @@
-schwartz_deli = ["Frank", "Noah", "Celine"]
-
 def line(schwartz_deli)
   if schwartz_deli.empty? == false
     intro_string = "The line is currently:"
