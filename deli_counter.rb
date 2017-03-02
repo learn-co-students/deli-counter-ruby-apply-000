@@ -4,7 +4,7 @@ def line(deli_array)
     puts "The line is currently empty."
   else
     line_string = "The line is currently:"
-    deli_array.each_with_index {|val, index| line_string += " #{index + 1}. #{val}" }
+    deli_array.each_with_index {|name, index| line_string += " #{index + 1}. #{name}" }
     puts line_string
   end
 end
