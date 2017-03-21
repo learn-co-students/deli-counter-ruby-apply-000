@@ -3,9 +3,8 @@ katz_deli = []
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-  position = katz_deli.length
+  position = katz_deli.size
   puts "Welcome, #{name}. You are number #{position} in line."
-  position - 1
 end
 
 def now_serving(katz_deli)
