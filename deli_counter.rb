@@ -1,19 +1,19 @@
 katz_deli = []
 
 def line(katz_deli)
-  if katz_deli == [] 
+  if katz_deli == []
     puts "The line is currently empty."
-  else 
+  else
     i = 0
     status = "The line is currently:"
   while i < katz_deli.length
-      
+
      status += " #{i+1}. #{katz_deli[i]}"
     i += 1
   end
-  puts status 
+  puts status
   end
-  
+
 end
 
 def take_a_number(katz_deli, name)
@@ -25,4 +25,3 @@ def now_serving(katz_deli)
 puts katz_deli == []? "There is nobody waiting to be served!" : "Currently serving #{katz_deli[0]}."
 katz_deli.shift
 end
-
