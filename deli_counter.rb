@@ -1,19 +1,5 @@
-# Write your code here.# Write your code here.
-#define #line that accepts array as argument
-  #define new empty array (customers) that holds customers and position number
-  #if the array is empty
-    #puts "The line is currently empty."
-  #else
-    #for each element in the array
-      #define number which is array.index + 1
-      #add "number. name" to array of customers
-    #end
-    #print
-  #end
-
 
 def line(deli)
-  customers = []
   if deli == []
     puts "The line is currently empty."
   else
