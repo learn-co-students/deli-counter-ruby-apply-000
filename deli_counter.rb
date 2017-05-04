@@ -1,6 +1,6 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.length == 0
+  if katz_deli.length == 0 #use .empty?
     puts "The line is currently empty."
   else
     str = "The line is currently:"
@@ -11,8 +11,11 @@ def line(katz_deli)
   end
 end
 
+#potentially use inject or another array function.
+
+
 def take_a_number(katz_deli, name)
-  katz_deli << name
+  katz_deli << name #potential to use another method 
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
@@ -24,3 +27,4 @@ def now_serving(katz_deli)
     katz_deli.shift
   end
 end
+#combine 26 and 27
