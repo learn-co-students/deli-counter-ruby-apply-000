@@ -7,8 +7,7 @@ def line(katz_deli)
     if katz_deli.empty? == true
     puts "The line is currently empty."
   else
-    puts "The line is currently: 
-        katz_deli.each_with_index{|index, customer| puts "#{index}. #{customer}"}
+    puts "The line is currently: " + katz_deli.collect{|x| "#{katz_deli.index(x)+1}. " + x}.join(" ")
   end
 end
 
