@@ -6,12 +6,11 @@ def line(linearr)
   else
     string = "The line is currently:"
     (1..(linearr.length)).each do |num|
-      string=string+" #{num}. #{linearr[num-1]}"
+      string = string + " #{num}. #{linearr[num - 1]}"
     end
     puts string
   end
 end
-
 
 def take_a_number(linearr, name)
   # adds person with name to back of linearr
