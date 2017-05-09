@@ -15,7 +15,7 @@ end
 
 
 def take_a_number(katz_deli, name)
-  katz_deli << name #potential to use another method 
+  katz_deli << name #potential to use another method .push
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
