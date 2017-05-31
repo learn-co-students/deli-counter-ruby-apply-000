@@ -16,12 +16,6 @@ def print_line(queue)
 end
 
 def take_a_number(queue, person)
-  number = queue.index(queue.last).to_i + 1
-  puts "Welcome, #{person}. You are number #{number} in line."
-  queue << person
-end
-
-def take_a_number(queue, person)
   number = queue.length + 1
   puts "Welcome, #{person}. You are number #{number} in line."
   queue << person
