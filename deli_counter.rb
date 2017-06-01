@@ -1,5 +1,6 @@
 katz_deli = []
 
+#Prints the line
 def line(queue)
   if queue.empty?
     puts "The line is currently empty."
@@ -9,18 +10,20 @@ def line(queue)
   end
 end
 
+#Auxiliar function to concatenate the queue
 def print_line(queue)
   queue.map.with_index do |person, i|
     " #{i + 1 }. #{person}"
   end
 end
 
+# Inserts someone in the array
 def take_a_number(queue, person)
-  number = queue.length + 1
-  puts "Welcome, #{person}. You are number #{number} in line."
   queue << person
+  puts "Welcome, #{person}. You are number #{queue.length} in line."
 end
 
+# Serves first person in the queue and removes it
 def now_serving(queue)
   if queue.empty?
     puts "There is nobody waiting to be served!"
@@ -28,4 +31,5 @@ def now_serving(queue)
     person = queue.shift
     puts "Currently serving #{person}."
   end
+  queue
 end
