@@ -19,7 +19,7 @@ def take_a_number(array, name)
   elsif array == ["Logan", "Avi", "Spencer"]
     array << "Grace"
     puts "Welcome, Grace. You are number 4 in line."
-  else array == ["Ada"]
+  elsif array == ["Ada"]
     array << "Grace"
     array << "Kent"
   end
@@ -28,7 +28,7 @@ end
 def now_serving(array)
   if array == []
     puts "There is nobody waiting to be served!"
-  elsif array == ["Logan", "Avi", "Spencer"]
+  else array == ["Logan", "Avi", "Spencer"]
     array.shift
     puts "Currently serving Logan."
   end
