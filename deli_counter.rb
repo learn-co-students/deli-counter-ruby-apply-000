@@ -15,14 +15,9 @@ def line(array)
 end
 
 def take_a_number(array, name)
-  if array == []
-    array << "#{name}"
-    puts "Welcome, #{name}. You are number 1 in line."
-  else
     z = array.size
     array << "#{name}"
     puts "Welcome, #{name}. You are number #{z +1} in line."
-  end
 end
 
 def now_serving(array)
