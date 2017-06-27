@@ -21,7 +21,7 @@ end
 #now_serving method
   #will take in one argument; an array.
   #if array is empty, then print out 'no one in line'.
-  #when it's called, it will take one element from te beginning of the array.
+  #when it's called, it will take one element from the beginning of the array.
     #print out that element, and remove it from array.
       #can accompish both with array.shift.
     #mental test-> ["ada", "grace", "kent"]
@@ -57,8 +57,8 @@ def line arr
     #  puts "Line is currently: #{i + 1}. #{arr[i]}"
     #end
     string_array = []
-    arr.each_with_index do |v, i|
-      string_array.push("#{i + 1}. #{v}")
+    arr.each_with_index do |val, idx|
+      string_array.push("#{idx + 1}. #{val}")
     end
     puts "The line is currently: #{string_array.join(" ")}"
   end
