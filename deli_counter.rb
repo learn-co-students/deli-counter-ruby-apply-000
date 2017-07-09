@@ -2,7 +2,12 @@ def line(line_size)
   if (line_size.size == 0)
     puts "The line is currently empty."
   else
-    puts "The line is currently: #{line_size}"
+        y=1
+        print "The line is currently:"
+        line_size.each{|x| print " #{y}. #{x}"
+            y+=1
+        }
+        puts ""
 end
 end
 
