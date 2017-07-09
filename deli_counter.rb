@@ -1,14 +1,15 @@
-def line(line_size)
-  if (line_size.size == 0)
+def line(line)
+  if (line.size == 0)
     puts "The line is currently empty."
   else
-        y=1
-        print "The line is currently:"
-        line_size.each{|x| print " #{y}. #{x}"
-            y+=1
-        }
-        puts ""
-end
+    y=1
+    str = "The line is currently:"
+    while y<=line.size
+      str += " #{y}. #{line[y-1]}"
+      y+=1
+    end
+    puts str
+  end
 end
 
 def take_a_number(line, name)
