@@ -135,10 +135,10 @@ def valid_command?(command)
   (command == "A" || command == "B" || command == "C" || command == "D" || command == "E")
 end
 
-
+# ----- end of revised code -----
 
 =begin
-# ----- Beginning of OO code (still in progress)-----
+# ----- beginning of OO revised code (still in progress) -----
 class Deli_Counter
 
   def intialize(katz_deli, order)
@@ -287,5 +287,5 @@ class Deli_Counter
   end
 end
 
-# ----- End of OO code -----
+# ----- end of OO revised code (still in progress) -----
 =end
