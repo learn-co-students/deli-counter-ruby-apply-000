@@ -215,15 +215,18 @@ class Deli_Counter
 
   def order_summary
     puts "You ordered the following: "
-    @order.each do |order_item|
-      puts "#{order_item[0]} - #{order_item[1]}"
+    MENU.each do |menu_item|
+      if @order.include?(menu_item)
+        counter = @order.count {|order_item| order_item == menu_item}
+        puts "#{counter} x #{menu_item[0]} - $#{counter * menu_item[1]}"
+      end
     end
   end
 
   def place_order
-    input = "Y"
+    command = "Y"
 
-    until (input == "N")
+    until (command == "N")
       puts "What would you like to order? 1-3 "
       input = gets.strip
       index = input_to_index(input)
@@ -236,7 +239,7 @@ class Deli_Counter
       end
 
       puts "Would you like to order anything else? Y/N "
-      input = gets.strip
+      command = gets.strip
     end
   end
 
