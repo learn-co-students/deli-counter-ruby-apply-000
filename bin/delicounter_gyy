@@ -16,7 +16,7 @@ interact(katz_deli, order, MENU)
 
 
 =begin
-# ----- beginning of OO code -----
+# ----- beginning of OO code (still in progress) -----
 customer = Deli_Counter.new
 puts "Hi. Welcome to Katz Deli!"
 customer.interact

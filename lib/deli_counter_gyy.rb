@@ -1,3 +1,4 @@
+# ----- beginning of revised code -----
 # ----- main method -----
 def interact(katz_deli, order, menu) ## steps through customer interaction
   puts "How may I help you?"
@@ -137,9 +138,10 @@ end
 
 
 =begin
-# ----- Beginning of OO code -----
+# ----- Beginning of OO code (still in progress)-----
 class Deli_Counter
-  def intialize(katz_deli = nil, order = nil)
+
+  def intialize(katz_deli, order)
     @katz_deli = ["Amy", "Joe"]
     @order = []
   end
