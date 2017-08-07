@@ -23,7 +23,7 @@ def interact(katz_deli, order, menu) ## steps through customer interaction
 
     if (command == "D")
       place_order(order, menu)
-      order_summary(order)
+      order_summary(order, menu)
       total(order)
       command = "E"
     end
@@ -95,17 +95,25 @@ def total(order) ## returns total order cost
   puts "Your total is: $#{total_cost}"
 end
 
-def order_summary(order) ## returns summary of person's order
+def order_summary(order, menu) ## returns summary of person's order
   puts "You ordered the following: "
-  order.each do |order_item|
-    puts "1 x #{order_item[0]} - $#{order_item[1]}"
+  menu.each do |menu_item|
+    if order.include?(menu_item)
+      counter = 0
+      order.each do |order_item|
+        if order_item == menu_item
+          counter += 1
+        end
+      end
+      puts "#{counter} x #{menu_item[0]} - $#{count * menu_item[1]}"
+    end
   end
 end
 
 def place_order(order, menu) ## asks for person's order
-  input = "Y"
+  command = "Y"
 
-  until (input == "N")
+  until (command == "N")
     puts "What would you like to order? 1-3 "
     display_menu(menu)
     input = gets.strip
@@ -115,11 +123,11 @@ def place_order(order, menu) ## asks for person's order
       order.push(menu[index])
     else
       puts "Invalid selection. Please try again."
-      place_order
+      place_order(order, menu)
     end
 
     puts "Would you like to order anything else? Y/N "
-    input = gets.strip
+    command = gets.strip
   end
 end
 

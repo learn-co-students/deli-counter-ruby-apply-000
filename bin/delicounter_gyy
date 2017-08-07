@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'pry'
 require_relative '../lib/deli_counter_gyy.rb'
 
 katz_deli = ["Amy", "Joe"]
