@@ -99,13 +99,8 @@ def order_summary(order, menu) ## returns summary of person's order
   puts "You ordered the following: "
   menu.each do |menu_item|
     if order.include?(menu_item)
-      counter = 0
-      order.each do |order_item|
-        if order_item == menu_item
-          counter += 1
-        end
-      end
-      puts "#{counter} x #{menu_item[0]} - $#{count * menu_item[1]}"
+      counter = order.count {|order_item| order_item == menu_item}
+      puts "#{counter} x #{menu_item[0]} - $#{counter * menu_item[1]}"
     end
   end
 end
