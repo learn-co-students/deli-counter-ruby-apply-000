@@ -1,4 +1,4 @@
-# ----- beginning of original code -----
+# ----- beginning of original code v1 -----
 
 katz_deli = []
 
@@ -32,4 +32,4 @@ def now_serving(katz_deli)
   end
 end
 
-# ----- end of original code -----
+# ----- end of original code v1 -----
