@@ -143,8 +143,7 @@ end
 =begin
 # ----- beginning of OO revised code (still in progress) -----
 class Deli_Counter
-
-  def intialize(katz_deli, order)
+  def initialize(katz_deli, order)
     @katz_deli = ["Amy", "Joe"]
     @order = []
   end
