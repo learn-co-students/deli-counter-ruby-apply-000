@@ -16,7 +16,10 @@ interact(katz_deli, order, MENU)
 
 =begin
 # ----- beginning of OO code (still in progress) -----
-customer = Deli_Counter.new
+katz_deli = ["Amy", "Joe"]
+order = []
+
+customer = Deli_Counter.new(katz_deli, order)
 puts "Hi. Welcome to Katz Deli!"
 customer.interact
 # ----- end of OO code -----

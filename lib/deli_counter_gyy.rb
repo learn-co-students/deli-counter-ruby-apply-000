@@ -1,4 +1,4 @@
-# ----- beginning of revised code -----
+# ----- beginning of revised code v2-----
 # ----- main method -----
 def interact(katz_deli, order, menu) ## steps through customer interaction
   puts "How may I help you?"
@@ -138,14 +138,15 @@ def valid_command?(command)
   (command == "A" || command == "B" || command == "C" || command == "D" || command == "E")
 end
 
-# ----- end of revised code -----
+# ----- end of revised code v2 -----
+
 
 =begin
-# ----- beginning of OO revised code (still in progress) -----
+# ----- beginning of OO revised code v3 -----
 class Deli_Counter
-  def initialize(katz_deli, order)
-    @katz_deli = ["Amy", "Joe"]
-    @order = []
+  def initialize(katz_deli = nil, order = nil)
+    @katz_deli = katz_deli
+    @order = order
   end
 
   MENU = [
@@ -191,7 +192,7 @@ class Deli_Counter
   end
 
   def valid_order?(index)
-    index.between(0, MENU.length - 1)
+    index.between?(0, MENU.length - 1)
   end
 
   def display_menu
@@ -227,6 +228,7 @@ class Deli_Counter
 
     until (command == "N")
       puts "What would you like to order? 1-3 "
+      display_menu
       input = gets.strip
       index = input_to_index(input)
 
@@ -292,5 +294,5 @@ class Deli_Counter
   end
 end
 
-# ----- end of OO revised code (still in progress) -----
+# ----- end of OO revised code v3 -----
 =end
