@@ -1,13 +1,13 @@
 # Write your code here.
 katz_deli=[]
 
-def line (num)
+def line (katz_deli)
   line_num = []
-  if num.length == 0
+  if katz_deli.empty? == true
     puts "The line is currently empty."
   else
     output = "The line is currently:"
-    num.each.with_index(1) {|val, index| line_num.push(" #{index}. #{val}")}
+    katz_deli.each.with_index(1) {|val, index| line_num.push(" #{index}. #{val}")}
     puts "#{output}#{line_num.join("") }"
   end
 end
