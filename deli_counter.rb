@@ -4,12 +4,12 @@ def line(current_line)
   if current_line.empty?
     puts "The line is currently empty."
   else
-    print "The line is currently: "
-    current_line.each_with_index do |person, position|
-      position += 1
-      print position, ". ", person, " "
+    message = "The line is currently: "
+    current_line.each_with_index do |person, index|
+      position = index + 1
+      message << position.to_s + ". " + person + " "
     end
-    print "\n"
+    puts message.chomp(" ")
   end
 end
 
@@ -28,3 +28,6 @@ def now_serving(current_line)
     return current_line
   end
 end
+
+test_line = ["John", "Ted", "Wilma"]
+line(test_line)
