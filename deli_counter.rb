@@ -9,7 +9,7 @@ def line(people_in_line)
       line_array.push("#{index}. #{name}")
     end
     puts "The line is currently: #{line_array.join(" ")}"
-  end
+end
 end
 
 def take_a_number(katz_deli, name)
@@ -24,5 +24,5 @@ def now_serving(waiting_array)
   else
     puts "Currently serving #{waiting_array[0]}."
   end
-  waiting_array.shift
+  last_client = waiting_array.shift
 end
