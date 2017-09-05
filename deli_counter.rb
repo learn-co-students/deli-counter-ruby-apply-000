@@ -28,6 +28,3 @@ def now_serving(current_line)
     return current_line
   end
 end
-
-test_line = ["John", "Ted", "Wilma"]
-line(test_line)
