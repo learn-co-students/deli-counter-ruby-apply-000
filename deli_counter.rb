@@ -1,1 +1,47 @@
 # Write your code here.
+
+# class DeliCounter
+#   def initialize(line = nil)
+#     @line = line || Array.new
+#
+#   end
+#
+#   def line
+#     if @line.length == 0
+#         puts "The line is currently empty."
+#     end
+#   end
+# end
+
+
+katz_deli = []
+
+def line (line)
+
+  announcment = "The line is currently: "
+  if line.length == 0
+    puts "The line is currently empty."
+  else
+    counter = 0
+    while counter < line.length
+      customer = line[counter] + " "
+      announcment += "#{counter+1}. #{customer}"
+      counter += 1
+    end
+    puts announcment.chomp(" ")
+  end
+
+end
+
+def take_a_number(line, name)
+  line << name
+  puts "Welcome, #{name}. You are number #{line.index(name) + 1} in line."
+end
+
+def now_serving(line)
+  if line.length == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line.shift}."
+  end
+end
