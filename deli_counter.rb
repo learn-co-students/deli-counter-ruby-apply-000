@@ -1,19 +1,4 @@
 # Write your code here.
-
-# class DeliCounter
-#   def initialize(line = nil)
-#     @line = line || Array.new
-#
-#   end
-#
-#   def line
-#     if @line.length == 0
-#         puts "The line is currently empty."
-#     end
-#   end
-# end
-
-
 katz_deli = []
 
 def line (line)
