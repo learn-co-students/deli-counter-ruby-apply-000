@@ -26,8 +26,7 @@ def now_serving(katz_deli)
   if katz_deli.count == 0
     puts "There is nobody waiting to be served!"
   else
-    output = []
-    output << katz_deli.shift
-    puts "Currently serving #{output[0]}."
+    puts "Currently serving #{katz_deli[0]}."
+    katz_deli.shift
   end
 end
