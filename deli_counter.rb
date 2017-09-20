@@ -8,7 +8,7 @@ def line (line)
     puts "The line is currently empty."
   else
     line.each do |x|
-      announcment += "#{line.index(x) + 1}. #{line[line.index(x)]} "
+      announcment += "#{line.index(x) + 1}. #{x} "
     end
     puts announcment.chomp(" ")
   end
