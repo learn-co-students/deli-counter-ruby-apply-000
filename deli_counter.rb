@@ -7,11 +7,8 @@ def line (line)
   if line.length == 0
     puts "The line is currently empty."
   else
-    counter = 0
-    while counter < line.length
-      customer = line[counter] + " "
-      announcment += "#{counter+1}. #{customer}"
-      counter += 1
+    line.each do |x|
+      announcment += "#{line.index(x) + 1}. #{line[line.index(x)]} "
     end
     puts announcment.chomp(" ")
   end
@@ -30,3 +27,11 @@ def now_serving(line)
     puts "Currently serving #{line.shift}."
   end
 end
+
+
+# counter = 0
+# while counter < line.length
+#   customer = line[counter] + " "
+#   announcment += "#{counter+1}. #{customer}"
+#   counter += 1
+# end
