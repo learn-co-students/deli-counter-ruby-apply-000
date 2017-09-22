@@ -9,8 +9,8 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each do |customer|
-      customer.prepend("#{place_in_line}. ")
-      line_order.push(customer)
+      numbered_customer = "#{place_in_line}. " + customer
+      line_order.push(numbered_customer)
       place_in_line += 1
     end
     puts "The line is currently: #{line_order.join(" ")}"
