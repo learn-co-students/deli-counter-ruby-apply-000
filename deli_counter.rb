@@ -2,9 +2,7 @@ def line(current_line)
   if current_line.length == 0
     puts "The line is currently empty."
   else
-    line_list = current_line.collect.with_index do |person, index|
-      "#{index + 1}. #{person}"
-    end 
+    line_list = current_line.collect.with_index { |person, index| "#{index + 1}. #{person}" }
     puts "The line is currently: #{line_list.join(" ")}"
   end
 end
