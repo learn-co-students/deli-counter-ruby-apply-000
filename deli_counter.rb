@@ -2,19 +2,17 @@
 katz_deli = []
 
 def line(que)
-  order = 0
   if que.length == 0
     puts "The line is currently empty."
   else
     puts "The line is currently: " +
-    que.map { |i| (order += 1).to_s + ". " + i.to_s  }.join(" ")
+    que.map { |i| (que.index(i) + 1).to_s + ". " + i.to_s  }.join(" ")
   end
 end
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
-  count = katz_deli.index(name)
-  puts "Welcome, #{name}. You are number " + (count + 1).to_s + " in line."
+  puts "Welcome, #{name}. You are number " + (katz_deli.index(name) + 1).to_s + " in line."
 end
 
 def now_serving(line)
