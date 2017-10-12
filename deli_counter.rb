@@ -6,7 +6,7 @@ def line(que)
     puts "The line is currently empty."
   else
     puts "The line is currently: " +
-    que.map { |i| (que.index(i) + 1).to_s + ". " + i.to_s  }.join(" ")
+    que.map { |i| (que.index(i) + 1).to_s + ". " + i }.join(" ")
   end
 end
 
