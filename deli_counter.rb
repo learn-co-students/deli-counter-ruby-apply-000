@@ -11,6 +11,6 @@ def line(names)
 end
 
 def take_a_number(katz_deli, n)
-  names << n
+  katz_deli << n
   puts "Welcome, #{n}. You are number #{names.length} in line."
 end
