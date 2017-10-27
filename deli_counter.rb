@@ -14,3 +14,12 @@ def take_a_number(names, n)
   names << n
   puts "Welcome, #{n}. You are number #{names.length} in line."
 end
+
+def now_serving(names)
+  if names.length == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently servign #{names[0]}."
+    names.shift
+  end
+end
