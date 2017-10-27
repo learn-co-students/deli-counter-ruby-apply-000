@@ -7,5 +7,5 @@ currentline = "The line is currently:"
       currentline << " #{i+1}. #{names[i]}"
     end
   end
-  currentline
+  puts currentline
 end
