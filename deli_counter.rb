@@ -5,4 +5,3 @@ def line(names)
     print "#{i+1}. #{names[i]}. "
   end
 end
-
