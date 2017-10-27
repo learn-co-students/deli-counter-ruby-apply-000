@@ -4,7 +4,7 @@ currentline = "The line is currently:"
     puts "The line is currently empty."
   else
     for i in 0...names.length
-      currentline >> " #{i+1}. #{names[i]}"
+      currentline << " #{i+1}. #{names[i]}"
     end
   end
   currentline
