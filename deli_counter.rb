@@ -1,10 +1,11 @@
 def line(names)
+currentline = "The line is currently:"
   if names.length == 0
     puts "The line is currently empty."
-  else
-    print "The line is currently:"
+  else 
     for i in 0...names.length
-      print " #{i+1}. #{names[i]}"
+      currentline >> " #{i+1}. #{names[i]}"
     end
   end
+  currentline
 end
