@@ -1,23 +1,20 @@
 # Write your code here.
 
-katz_deli = []
-
 def line(store)
   if store.empty?
     puts "The line is currently empty."
   else
     arr = ["The line is currently:"]
     (store.length).times do |i|
-      idx = i + 1
-      arr << "#{idx}. #{store[i]}"
+      arr << "#{i + 1}. #{store[i]}"
     end
     puts arr.join(" ")
   end
 end
 
-def take_a_number(store_line, name)
-  store_line << name
-  puts "Welcome, #{name}. You are number #{store_line.length} in line."
+def take_a_number(store, name)
+  store << name
+  puts "Welcome, #{name}. You are number #{store.length} in line."
 end
 
 def now_serving(store)
