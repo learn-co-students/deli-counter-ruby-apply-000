@@ -2,9 +2,11 @@
 
 def line(array)
   if array.length > 0
+    size = 0
     str = ""
-    array.each do |person|
-      str += " #{array.index(person) + 1}. #{person}"
+    while(size < array.length)
+      str += " #{size + 1}. #{array[size]}"
+      size += 1
     end
     puts "The line is currently:" + str
   else
@@ -15,11 +17,9 @@ end
 # ALTERNATIVE LINE FUNCTION:
 # def line(array)
 #   if array.length > 0
-#     size = 0
 #     str = ""
-#     while(size < array.length)
-#       str += " #{size + 1}. #{array[size]}"
-#       size += 1
+#     array.each do |person|
+#       str += " #{array.index(person) + 1}. #{person}"
 #     end
 #     puts "The line is currently:" + str
 #   else
