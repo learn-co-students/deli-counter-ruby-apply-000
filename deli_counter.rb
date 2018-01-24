@@ -14,11 +14,24 @@ def line(array)
   end
 end
 
-# ALTERNATIVE LINE FUNCTION:
+# ALTERNATIVE LINE FUNCTIONS:
 # def line(array)
 #   if array.length > 0
 #     str = ""
 #     array.each do |person|
+#       str += " #{array.index(person) + 1}. #{person}"
+#     end
+#     puts "The line is currently:" + str
+#   else
+#     puts "The line is currently empty."
+#   end
+# end
+
+# def line(array)
+#   if array.length > 0
+#     size = 0
+#     str = ""
+#     for person in array do
 #       str += " #{array.index(person) + 1}. #{person}"
 #     end
 #     puts "The line is currently:" + str
