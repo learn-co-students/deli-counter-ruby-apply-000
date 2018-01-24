@@ -29,7 +29,6 @@ end
 
 # def line(array)
 #   if array.length > 0
-#     size = 0
 #     str = ""
 #     for person in array do
 #       str += " #{array.index(person) + 1}. #{person}"
