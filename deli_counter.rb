@@ -6,15 +6,11 @@ def line(queue)
   else
     customer_list_string = ""
 
-    # for every array elt except the last one
-    for i in 0..(queue.length - 2)
-      customer_list_string += "#{i+1}. #{queue[i]} "
+    for i in 0..(queue.length - 1)
+      customer_list_string += " #{i+1}. #{queue[i]}"
     end
 
-    # for the last array elt
-    customer_list_string += "#{queue.length}. #{queue[-1]}"
-
-    puts "The line is currently: " + customer_list_string
+    puts "The line is currently:" + customer_list_string
   end
 end
 
