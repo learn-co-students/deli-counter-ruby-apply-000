@@ -4,7 +4,7 @@ def line(x)
   assignments = []
   if x.length > 0
     x.each.with_index(1) do |name, index|
-      assignments.push("#{index}. #{name}")
+      assignments << "#{index}. #{name}"
     end
     puts "The line is currently: #{assignments.join(" ")}"
   else
