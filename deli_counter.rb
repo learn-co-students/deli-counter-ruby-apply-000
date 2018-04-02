@@ -13,18 +13,16 @@ def line(deli)
   end
 end
 
-def take_a_number(deli, person) #q is the array, and s is the person's name as a string
+def take_a_number(deli, person)
       deli << person
-      n = deli.length
-      puts "Welcome, #{person}. You are number #{n} in line."
-  end
+      puts "Welcome, #{person}. You are number #{deli.length} in line."
 end
 
-def now_serving(arr)
-    if arr.length == 0
+def now_serving(deli)
+    if deli.length == 0
      puts "There is nobody waiting to be served!"
     else
-     puts "Currently serving #{arr[0]}."
-     arr.shift
+     puts "Currently serving #{deli[0]}."
+     deli.shift
     end
 end
