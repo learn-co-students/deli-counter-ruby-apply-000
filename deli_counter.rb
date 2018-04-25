@@ -3,6 +3,7 @@
 katz_deli = []
 
 def line(array)
+  array_order = array.each_with_index
   if array.empty? 
     puts "The line is currently empty."
   else
