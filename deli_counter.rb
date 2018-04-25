@@ -12,12 +12,16 @@ def line(array)
 end
 
 def take_a_number(line, person)
-  
+  line << person
   puts "Welcome, #{person}. You are number #{line.length} in line."
   
 end
 
 def now_serving(line)
-  puts "Currently serving #{line.first}"
+  if line.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line.first}"
+    
 end
   
