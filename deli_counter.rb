@@ -16,5 +16,6 @@ def take_a_number(line, person)
 end
 
 def now_serving(line)
-  puts "Currently serving"
+  puts "Currently serving #{line.first}"
+end
   
