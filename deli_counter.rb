@@ -1,11 +1,11 @@
 # Write your code here.
 
 def line(array)
-  line_order = "The line is currently: "
+  line_order = "The line is currently:"
   if array.empty? 
     puts "The line is currently empty."
   else 	
-    array.each_with_index { |name, order| line_order << "#{order + 1}. #{name} " }
+    array.each_with_index { |name, order| line_order << " #{order + 1}. #{name}" }
     puts line_order
 	end
 end
