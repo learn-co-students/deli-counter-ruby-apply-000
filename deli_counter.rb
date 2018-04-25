@@ -13,5 +13,8 @@ end
 
 def take_a_number(line, person)
   puts "Welcome, #{person}. You are number #{line.length} in line."
+end
 
-def now
+def now_serving(line)
+  puts "Currently serving"
+  
