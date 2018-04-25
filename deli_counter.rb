@@ -1,14 +1,12 @@
 # Write your code here.
 
-katz_deli = []
-
 def line(array)
-  array_order = array.each_with_index
+  line_order = "The line is currently: "
   if array.empty? 
     puts "The line is currently empty."
-  else
-    puts "The line is currently:"  	
-    array.each_with_index { |name, order| puts "#{order + 1} . #{name}" }
+  else 	
+    array.each_with_index { |name, order| line_order << " #{order + 1}. #{name} " }
+    puts line_order
 	end
 end
 
@@ -26,4 +24,3 @@ def now_serving(line)
     line.shift
   end
 end
-  
