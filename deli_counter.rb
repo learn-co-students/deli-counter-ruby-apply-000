@@ -11,5 +11,7 @@ def line(array)
 	end
 end
 
-def take_a_number(list, person)
-  puts "Welcome, #{person}. You are number "
+def take_a_number(line, person)
+  puts "Welcome, #{person}. You are number #{line.length} in line."
+
+def now
