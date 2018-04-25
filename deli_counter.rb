@@ -7,7 +7,7 @@ def line(array)
   if array.empty? 
     puts "The line is currently empty."
   else
-    puts "The line is currently:" 	
+    puts "The line is currently:" + 	
     array.each_with_index { |name, order| puts "#{order + 1} . #{name}" }
 	end
 end
