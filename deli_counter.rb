@@ -5,12 +5,12 @@ def line(katz_deli)
 	puts "The line is currently empty."
   else
 	increment_count = 1
-	lineNamesandNumbers = []
+	line_names_and_numbers = []
 	katz_deli.each do |name|
-	  lineNamesandNumbers.push("#{increment_count}. #{name}")
+	  line_names_and_numbers.push("#{increment_count}. #{name}")
 	  increment_count += 1
 	end
-	puts "The line is currently: #{lineNamesandNumbers.join(" ")}"
+	puts "The line is currently: #{line_names_and_numbers.join(" ")}"
   end
 end
 
