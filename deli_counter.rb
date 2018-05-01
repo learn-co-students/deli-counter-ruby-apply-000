@@ -1,6 +1,6 @@
 # Write your code here.
-total_served
 
+customer_counter = 1
 
 def line(array)
   line_order = "The line is currently:"
@@ -14,7 +14,8 @@ end
 
 def take_a_number(line, person)
   line << person
-  puts "Welcome, #{person}. You are number #{line.length} in line."
+  puts "Welcome, you are number #{customer_counter}"
+  customer_counter += 1
   
 end
 
@@ -22,7 +23,7 @@ def now_serving(line)
   if line.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{line.first}."
+    puts "Currently serving number #{customer_counter}."
     line.shift
   end
 end
