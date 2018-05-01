@@ -1,4 +1,6 @@
 # Write your code here.
+total_served
+
 
 def line(array)
   line_order = "The line is currently:"
