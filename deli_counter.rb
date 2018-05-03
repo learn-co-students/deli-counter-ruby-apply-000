@@ -13,6 +13,11 @@ def line(katz_deli)
   end
 end
 
+def take_a_number(line, name)
+  line.push(name)
+  puts "Welcome, #{name}. You are number #{line.length} in line."
+end
+
 def now_serving(line)
   if line.empty?
 	puts "There is nobody waiting to be served!"
@@ -21,7 +26,3 @@ def now_serving(line)
   end
 end
 
-def take_a_number(line, name)
-  line.push(name)
-  puts "Welcome, #{name}. You are number #{line.length} in line."
-end
