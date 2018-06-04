@@ -21,7 +21,7 @@ def line(katz_deli)
   if (katz_deli == [])
     return puts "The line is currently empty."
   else
-    return puts ("The line is currently:#{current_line.join}")
+    return puts "The line is currently:#{current_line.join}"
   end
 end
     
