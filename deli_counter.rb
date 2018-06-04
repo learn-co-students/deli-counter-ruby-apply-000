@@ -14,7 +14,7 @@ end
 
 def take_a_number(katz_deli, name)
   # add name to end of array, Omar.  And need to find a way to match index number to name for the puts command.
-  puts "Welcome, #{name}. You are number #{katz_deli[ ] + 1} in line."
+  puts "Welcome, #{name}. You are number #{katz_deli[-1]} in line."
 end
 
 def now_serving
