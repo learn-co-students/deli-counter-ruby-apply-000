@@ -1,16 +1,15 @@
 # Write your code here.
 
-
-
 def line(katz_deli)
-  if katz_deli == [ ]
-   puts "The line is currently empty."
+  size = katz_deli.size
+  index = 0
+  if size == 0
+    puts "The line is currently empty."
   else
-    puts "The line is currently: "
+    puts "The line is currently: #{katz_deli} "
   end
 end
-
-
+  
 
 def take_a_number(katz_deli, new_name)
   katz_deli << new_name
