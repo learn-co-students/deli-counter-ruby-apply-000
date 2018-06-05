@@ -21,5 +21,9 @@ end
 
 
 def now_serving
+  puts "Currently serving #{katz_deli[0]}."
+  
+end
+
 
 
