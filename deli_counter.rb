@@ -7,11 +7,9 @@ def line(array)
   if katz_deli == [ ]
     puts "The line is currently empty."
   else
-    array.each {
-    }
-    }
-    puts "The line is currently: #{katz_deli}"
+    
     katz_deli
+    puts "The line is currently: #{katz_deli}"
   end
 end
 
