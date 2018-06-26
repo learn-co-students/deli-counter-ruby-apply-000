@@ -3,11 +3,10 @@
 
 
 def line(katz_deli)
-  x = 1 
   if katz_deli == [ ]
     puts "The line is currently empty."
   else
-    puts "The line is currently: 
+    puts "The line is currently: " 
   end
 end
   
