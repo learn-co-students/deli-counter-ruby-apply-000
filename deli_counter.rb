@@ -1,12 +1,13 @@
 # Write your code here.
+
+
+
 def line(katz_deli)
-  index = 0
-  size = katz_deli.size
+  x = 1 
   if katz_deli == [ ]
     puts "The line is currently empty."
   else
-    string = "The line is currently: 1. #{katz_deli} "
-    puts string
+    puts "The line is currently: 
   end
 end
   
