@@ -1,10 +1,10 @@
 def line(katz_deli)
-  if katz_deli == []
+  if katz_deli == [ ]
     puts "The line is currently empty."
   else 
     current_state_of_line = "The line is currently:"
     num_in_line = 1
-    while num_in_line <= katz_deli.size
+    katz_deli.each do |name|
     current_state_of_line << " #{num_in_line}. #{katz_deli[num_in_line - 1]}"
     num_in_line += 1 
     end
