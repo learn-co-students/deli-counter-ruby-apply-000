@@ -29,6 +29,7 @@ def line(katz_deli)
 end
 
 
+# Assuming that the first customer of each day will always take number 1; and that take_a_number_2 will get run each time that a new customer takes a number, I think the following ought to suffice:
 num = 1
 def take_a_number_2(katz_deli, new_name)
   katz_deli << new_name
