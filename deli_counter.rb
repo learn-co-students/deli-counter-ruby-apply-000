@@ -1,10 +1,10 @@
 def line(katz_deli)
-  if katz_deli == [ ]
+  if katz_deli == []
     puts "The line is currently empty."
   else 
     current_state_of_line = "The line is currently:"
     num_in_line = 1
-    katz_deli.each do |name|
+    while num_in_line <= katz_deli.size
     current_state_of_line << " #{num_in_line}. #{katz_deli[num_in_line - 1]}"
     num_in_line += 1 
     end
@@ -40,7 +40,7 @@ end
   
 
 def now_serving(katz_deli)
-  if katz_deli != [ ]
+  if katz_deli != []
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   else

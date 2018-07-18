@@ -13,7 +13,7 @@ def line(katz_deli)
 end
 
 
-# using .each method, which Dave says is cleaner than .while
+# using .each method, which is cleaner than .while
 def line(katz_deli)
   if katz_deli == [ ]
     puts "The line is currently empty."
@@ -26,4 +26,12 @@ def line(katz_deli)
     end
     puts "#{current_state_of_line}" 
   end 
+end
+
+
+num = 1
+def take_a_number_2(katz_deli, new_name)
+  katz_deli << new_name
+  puts "You are number #{num}."
+  num += 1
 end
