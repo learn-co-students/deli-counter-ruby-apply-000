@@ -1,36 +1,25 @@
-Katz_deli = []
+katz_deli = ["John", "Ben"]
 
 
-def line(customers)
-  lineArray = []
-  if customers.length == 0
+def line(katz_deli)
+  line_array = []
+  if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    cunstomers.each.with_index do |name, index|
-      lineArray.push("#{name} #{index}")
+    katz_deli.each.with_index(1) do |name, index|
+      line_array.push("#{index}. #{name}")
     end
-    puts "The next in line is: #{lineArray.join(" ")}"
+    puts "The line is currently: #{line_array.join(" ")}"
   end
 end
-#
+
+line(katz_deli)
+
 
 def take_a_number(katz_deli, name)
-  i = 0
-  number = (katz_deli.length.to_s)
-  
-  if katz_deli == 0 
-    katz_deli << name 
-     i += 1
-  else 
-     while i < katz_deli.length
-	        i +=1
-	      end
-  katz_deli << name 
-end 
-  puts "Welcome, #{name}. You are number #{number} in line."
- end
-#
-
+  katz_deli.push(name)
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+end
 
 
 def now_serving(katz_deli)
