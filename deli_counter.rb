@@ -1,19 +1,8 @@
 katz_deli = []
 
 
-katz_deli = []
-
-
 def take_a_number(katz_deli, name) 
-  if katz_deli.empty? == true
-    katz_deli << name 
-    else 
-      i = 0 
-      while i < katz_deli.length
-        i +=1
-      end
-      katz_deli << name 
-  end
+  katz_deli << name 
   number = (katz_deli.length).to_s
   puts "Welcome, #{name}. You are number #{number} in line." 
 end
