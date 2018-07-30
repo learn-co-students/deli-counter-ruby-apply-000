@@ -1,6 +1,4 @@
-# Write your code here.
-# theLine = []
-Katz_Deli =[]
+Katz_deli = []
 
 
 def line(customers)
@@ -14,10 +12,32 @@ def line(customers)
     puts "The next in line is: #{lineArray.join(" ")}"
   end
 end
+#
+
+def take_a_number(katz_deli, name)
+  i = 0
+  number = (katz_deli.length.to_s)
+  
+  if katz_deli == 0 
+    katz_deli << name 
+     i += 1
+  else 
+     while i < katz_deli.length
+	        i +=1
+	      end
+  katz_deli << name 
+end 
+  puts "Welcome, #{name}. You are number #{number} in line."
+ end
+#
 
 
-# def take_a_number()
-# end
 
-# def now_serving()
-# end 
+def now_serving(katz_deli)
+	  if katz_deli.empty? == true
+	    puts "There is nobody waiting to be served!"
+	  else
+	    name = katz_deli.shift
+	    puts "Currently serving #{name}."
+	  end
+	end
