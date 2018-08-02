@@ -7,15 +7,14 @@ def line(x)
   else
     x.each.with_index(1) do |name, index|
       line_array.push("#{index}. #{name}")
-    end
     puts "The line is currently: #{line_array.join(', ')}"  // 'Name,Index'
   end
+end
 end
 def take_a_number (katz_deli, name)
   katz_deli['name'].push(name)
   p = katz_deli.index(name)+1
   puts "Welcome,#{name}. You are number #{katz_deli.length}".
-end
 end
 def now_serving(array)
   if array.empty?
