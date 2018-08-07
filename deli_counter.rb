@@ -5,9 +5,9 @@ def line(number)
     puts "The line is currently empty."
   else
     current_line = "The line is currently:"
-    number.each.with_index do |name, x|
-    startone = x + 1
-      current_line << " #{startone}. #{name}"
+    number.each_with_index do |name, x|
+    startatone = x + 1
+      current_line << " #{startatone}. #{name}"
     end
     puts current_line
   end
