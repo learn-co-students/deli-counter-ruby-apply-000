@@ -1,17 +1,34 @@
-# Write your code here.
 
-katz_deli = []
 
-def line()
-  if katz_deli != [] 
-    puts "Welcome, katz_deli[0]. You are number katz_deli[index+1] in line"
-  else 
+
+
+def line(katz_deli)
+  string = "The line is currently:"
+  if katz_deli == []
     puts "The line is currently empty."
-  end 
+    return
+  else
+    katz_deli.each_with_index do |name, index|
+      string << " #{index+1}." + " #{name}"
+    end
   end
-end 
+  puts string
+end
+
+def take_a_number(katz_deli, name)
+  katz_deli << name
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+end
+
+def now_serving(katz_deli)
+  string2 = "Currently serving "
+  if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+  puts string2 << katz_deli[0] + "."
+    katz_deli.shift
+  end
+end
 
 
-  # take_a_number(katz_deli, "Ada") #=> Welcome, Ada. You are number 1 in line.
-  # take_a_number(katz_deli, "Grace") #=> Welcome, Grace. You are number 2 in line.
-  # take_a_number(katz_deli, "Kent") #=> Welcome, Kent. You are number 3 in line.
+#Build the now_serving method which should call out (i.e. puts) the next person in line and then remove them from the front. If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
