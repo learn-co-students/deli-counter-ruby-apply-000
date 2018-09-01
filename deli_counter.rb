@@ -12,13 +12,16 @@
 def line(katz_deli)
     #if statement for line is empty
     #else iterate and use string provided
-
     if katz_deli.length == 0
         puts "The line is currently empty."
     else
         message = "The line is currently:"
+        #x = the name at whatever iteration
+        #y = the index value at x
         katz_deli.each_with_index do |x,y|
+        #add 1 to y since idx starts at 0
         message += " #{y.to_i + 1}. #{x}"
+        #message should = The line is currently: (followed by place and name)
         end
         puts "#{message}"
     end
@@ -59,6 +62,7 @@ def now_serving(katz_deli)
     if katz_deli.length == 0
         puts "There is nobody waiting to be served!"
     else
+        #shift method calls first element in an array while also removing it
         puts "Currently serving #{katz_deli.shift}."
     end
 end
