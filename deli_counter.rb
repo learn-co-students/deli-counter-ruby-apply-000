@@ -1,5 +1,3 @@
-
-
 #shows everyone their current place in the line. If there is nobody in line,
 #it should say "The line is currently empty.".
 =begin
@@ -10,16 +8,21 @@
     print the message The line is currently: for every person in the array
 =end
 def line(katz_deli)
-    #if statement for line is empty
-    #else iterate and use string provided
+    #check if either the line is empty or if it has people
+    #if the line has no body in it we need to out put a different message
+    #rather than trying to output people in a line
     if katz_deli.length == 0
         puts "The line is currently empty."
+    # if the line has people in it we will say place in line someone is followed by their name
     else
         message = "The line is currently:"
-        #x = the name at whatever iteration
-        #y = the index value at x
+        # in order to get the person along with their place in line
+        # we need to us the each_with_index method which will allow us
+        # to access each element of the array followed by their index
         katz_deli.each_with_index do |x,y|
-        #add 1 to y since idx starts at 0
+        # because the index starts at 0 we need to add 1 to the value
+        # now we are going to add the place in line along with the person
+        # in that spot to the end of the message until the eand of the array is reached
         message += " #{y.to_i + 1}. #{x}"
         #message should = The line is currently: (followed by place and name)
         end
@@ -38,7 +41,7 @@ end
     last place in line
 =end
 def take_a_number(katz_deli, name)
-    # append to end of list
+    # we are adding a name to end of list
     katz_deli << name
     #output welcome message
     puts "Welcome, #{name}. You are number #{katz_deli.length } in line."
@@ -55,9 +58,10 @@ end
     process check if array is empty => if not use welcome message and remove
     first element
 =end
-
-
 def now_serving(katz_deli)
+    #check if either the line is empty or if it has people
+    #if the line has no body in it we need to out put a different message
+    #rather than trying to output the first person and removing them from the list
 
     if katz_deli.length == 0
         puts "There is nobody waiting to be served!"
