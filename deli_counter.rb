@@ -1,17 +1,17 @@
 # Write your code here.
 
-katz_deli = []
-
 def line(deli)
   counter = 0
-  if deli.length == 0 
+  if deli == []
     puts "The line is currently empty."
   else 
     string = "The line is currently:"
-    while counter < deli.length
+
+    deli.each do |person|
       string += " #{counter+1}. #{deli[counter]}"
-      counter += 1
+      counter +=1
     end 
+    
     puts string
   end
 end 
