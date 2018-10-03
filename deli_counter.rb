@@ -4,13 +4,13 @@ katz_deli = []
 def line(array)
   if array.length == 0 
     puts "The line is currently empty."  
-else
-  line_desc = "The line is currently:"
-  array.each_with_index do |cust_name, index|
+  else
+    line_desc = "The line is currently:"
+    array.each_with_index do |cust_name, index|
     humanized_index = index + 1
-     line_desc += " #{humanized_index}. #{cust_name}"
+    line_desc += " #{humanized_index}. #{cust_name}"
   end
-   puts line_desc
+  puts line_desc
  end
 end
 
