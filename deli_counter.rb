@@ -7,11 +7,11 @@ def line(array)
   else
     line_desc = "The line is currently:"
     array.each_with_index do |cust_name, index|
-    humanized_index = index + 1
-    line_desc += " #{humanized_index}. #{cust_name}"
-  end
+      humanized_index = index + 1
+      line_desc += " #{humanized_index}. #{cust_name}"
+    end
   puts line_desc
- end
+  end
 end
 
 def take_a_number(array, name)
