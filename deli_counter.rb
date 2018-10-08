@@ -30,6 +30,7 @@ def now_serving(arr)
 #Check for empty line
   if arr == []
     puts "There is nobody waiting to be served!"
+    return
   else
 #Call out next person in line
     puts ("Currently serving " + arr[0] + ".")
