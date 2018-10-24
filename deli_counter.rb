@@ -1,17 +1,17 @@
-
 def line(deli)
   length = deli.length
   line = "The line is currently:"
   number = 1
-  if length < 1
+
+    if length < 1
         puts "The line is currently empty."
-  else
-      deli.each do |name|
-        line << " #{number}. #{name}"
-        number += 1
-      end
-      puts "#{line}"
-  end
+    else
+        deli.each do |name|
+          line << " #{number}. #{name}"
+          number += 1
+        end
+        puts line
+    end
 end
 
 
@@ -24,6 +24,7 @@ end
 
 def now_serving(deli)
   length = deli.length
+  
     if length < 1
       puts "There is nobody waiting to be served!"
     else
