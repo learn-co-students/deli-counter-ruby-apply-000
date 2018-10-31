@@ -9,7 +9,7 @@ def line(katz_deli)
     idx = 0
     str = "The line is currently:"
     while idx < katz_deli.length
-       str = str + " #{idx+1}. #{katz_deli[idx]}"
+      str = str + " #{idx+1}. #{katz_deli[idx]}"
       idx += 1 
     end
     puts str 
