@@ -1,10 +1,10 @@
 # Write your code here.
-def line(customers)
+def line(name)
   line_array = []
-  if customers.empty?
+  if name.empty?
     puts "The line is currently empty."
   else
-    customers.each.with_index(1) do |name, index|
+    name.each.with_index(1) do |name, index|
       line_array.push("#{index}. #{name}")
     end
     puts "The line is currently: #{line_array.join(" ")}"
