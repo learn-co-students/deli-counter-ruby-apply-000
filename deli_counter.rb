@@ -1,4 +1,6 @@
 # Write your code here.
+katz_deli = [];
+
 def line(katz_deli)
   line_array = []
   katz_deli.each.with_index(1){|name, index| line_array.push("#{index}. #{name}")}
@@ -22,3 +24,11 @@ def now_serving(katz_deli)
     katz_deli.shift
   end
 end
+
+
+take_a_number(katz_deli, "Harry");
+take_a_number(katz_deli, "Joe");
+take_a_number(katz_deli, "Georgia");
+line(katz_deli);
+now_serving(katz_deli);
+line(katz_deli);
