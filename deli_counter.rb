@@ -9,13 +9,13 @@ end
   if katz_deli.length < 1 
     puts "The line is currently empty."
   else 
-   i = 0 
-   a = []
-   while i < katz_deli.length 
-    a.push("#{i+1}. #{katz_deli[i]}")
-    i += 1
+   x = 0 
+   array = []
+   while x < katz_deli.length 
+    array.push("#{x+1}. #{katz_deli[x]}")
+    x += 1
     end
-  puts "The line is currently: #{a.join(" ")}" 
+  puts "The line is currently: #{array.join(" ")}" 
   end 
 end 
  def now_serving(katz_deli)
