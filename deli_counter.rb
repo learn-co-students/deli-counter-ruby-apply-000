@@ -1,10 +1,10 @@
 # Write your code here.
 def line(katz_deli)
   line_array = []
+  katz_deli.each.with_index(1){|name, index| line_array.push("#{index}. #{name}")}
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    katz_deli.each.with_index(1){|name, index| line_array.push("#{index}. #{name}")}
     puts "The line is currently: #{line_array.join(" ")}"
   end
 end
