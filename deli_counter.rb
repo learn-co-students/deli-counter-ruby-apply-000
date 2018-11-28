@@ -4,11 +4,16 @@ katz_deli = []
 #create a method #line that takes in an array
 #The method should return a string
 # if the line array is empty #line should say the line is empty
-# if there are people in the line #line should display the current line + the name and it's (index + 1)
+# if there are people in the line #line should display the current line
+
+#create a new array that I can use to manipulate
+#use a conditional to check the length of the katz deli
 #use the each_with_index to iterate thru the array
-#convert the array into a string before returning
+#if length > 0, current line format should diplay current line: + the name and it's (index + 1)
+#else display "The line is currently empty."
+#Make sure to convert the array into a string before returning using join
 def line(katz_deli)
-  new_arr = []
+  new_arr = Array.new
     if katz_deli.length > 0
       katz_deli.each_with_index do |name, index|
           new_arr << "#{index + 1}. #{name}"
@@ -18,7 +23,6 @@ def line(katz_deli)
       puts "The line is currently empty."
     end
 end
-
 
 # #take_a_number should accept 2 arguments katz_deli and a string
 # #take_a_number should call out (puts) the person's name along with their position in line.
