@@ -24,25 +24,30 @@ def line(katz_deli)
     end
 end
 
-# #take_a_number should accept 2 arguments katz_deli and a string
+#create a method #take_a_number that accepts 2 arguments.
+#An array and a string of the person joining the end of the line.
 # #take_a_number should call out (puts) the person's name along with their position in line.
+#Top-Tip: Remember that people like to count from 1, not from 0 ("zero") like computers.
+
+
 #if #take_a_number is empty it needs to add a person to the line
-#if there are already people in the line #take_a_number should add a person to the end of the line
+#if there are already people in the line #take_a_number should add a person to the end of the line => hint for me to use the .push method
 #needs to be able to add mult people in a row
-#tip  Remember that people like to count from 1, not from 0 ("zero") like computers.
+
 def take_a_number(katz_deli, string)
-    katz_deli.push(string)
-    position = katz_deli.index(string) + 1
+    katz_deli.push(string) #will evaulate to the katz_deli arr
+    position = katz_deli.index(string) + 1 #will evaulate to the index where the ele is found + 1.
     puts "Welcome, #{string}. You are number #{position} in line."
 end
 
-#create a method #now_serving that takes in  an array
+
+
 #should serve the first person in line and remove them from the queue
 #should say that the line is empty when empty
 
 def now_serving(katz_deli)
   if katz_deli.length > 0
-    serving = katz_deli.shift
+    serving = katz_deli.shift #which will remove the first element and evaluate to the element I am trying to remove.
     puts "Currently serving #{serving}."
   else
     puts "There is nobody waiting to be served!"
