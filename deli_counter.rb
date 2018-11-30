@@ -38,10 +38,10 @@ end
 # use the .index() method to locate the index where the ele is found and add 1
 # puts the message using string interpolation.
 
-def take_a_number(katz_deli, string)
-    katz_deli.push(string) #will evaulate to the katz_deli arr
-    position = katz_deli.index(string) + 1 #will evaulate to the index where the ele is found + 1.
-    puts "Welcome, #{string}. You are number #{position} in line."
+def take_a_number(katz_deli, person)
+    katz_deli.push(person) # will evaulate to the katz_deli arr
+    position = katz_deli.index(person) + 1 #will evaulate to the index where the ele is found + 1.
+    puts "Welcome, #{person}. You are number #{position} in line."
 end
 
 # create a method #now_serving that accepts the argument katz_deli
