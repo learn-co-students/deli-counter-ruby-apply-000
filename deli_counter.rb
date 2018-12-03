@@ -14,14 +14,14 @@
 # else display "The line is currently empty."
 # Make sure to convert the array into a string before returning using join
 
-katz_deli = []
+katz_deli = [] # => katz_deli = [John]
 def line(katz_deli)
   new_arr = Array.new
     if katz_deli.length > 0
       katz_deli.each_with_index do |name, index|
           new_arr << "#{index + 1}. #{name}"
       end
-      puts "The line is currently: #{new_arr.join(" ")}"
+      puts "The line is currently: #{new_arr.join(" ")}" # =>  The line is currently: 1. John
     else
       puts "The line is currently empty."
     end
