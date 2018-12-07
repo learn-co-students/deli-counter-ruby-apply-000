@@ -32,3 +32,5 @@ line(katz_deli)
 now_serving(katz_deli)
 
 take_a_number(katz_deli, "Pam")
+
+katz_deli << gets.chomp
