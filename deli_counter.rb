@@ -23,3 +23,12 @@ def now_serving(array)
     array.shift
   end
 end
+
+line(katz_deli)
+take_a_number(katz_deli, "Michael")
+take_a_number(katz_deli, "Jim")
+take_a_number(katz_deli, "Ryan")
+line(katz_deli)
+now_serving(katz_deli)
+
+take_a_number(katz_deli, "Pam")
