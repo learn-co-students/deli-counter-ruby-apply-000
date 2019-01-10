@@ -2,31 +2,31 @@
 
 katz_deli = []
 
-def take_a_number(array, name)
-  array.push
-  puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
+def take_a_number(deli, name)
+deli << (name)
+place = deli.index(name)
+puts "Welcome, #{name}. You are number #{place+1} in line."
 end
 
-def line(array)
-  if array.empty? == true
-    puts "The line is currently empty."
-    array.each_with_index do |customer, number|
-      puts "The line is currently: #{number+1} #{customer}"
-    end
-  end
-  
-  line(katz_deli)
-    
-    def now_serving(array)
-      if array.empty? == true
-        puts "There is nobody waiting to be served!"
-      else
-        puts "Currently serving #{array.first}."
-        array.shift
-      end
-    end
-  end
-  
-  now_serving(katz_deli)
-  
-  
+
+
+def line(deli)
+if deli.empty? == true
+puts "The line is currently empty."
+else
+  the_line = ""
+deli.each_with_index do |customer, position|
+  the_line << " #{position+1}. #{customer}"
+end
+puts "The line is currently:#{the_line}"
+end
+end
+
+def now_serving(deli)
+if deli.empty? == true
+puts "There is nobody waiting to be served!"
+else
+puts "Currently serving #{deli.first}."
+deli.shift
+end
+end
