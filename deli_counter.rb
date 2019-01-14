@@ -5,11 +5,16 @@ def take_a_number (deli, name)
 end
 
 def line (deli)
-  if deli == []
-    puts "The line is currently empty."
+  deli_line = []
+  count = 1
+  if deli != []
+    deli.each do |i| 
+      deli_line.push("#{count}. #{i}")
+      count += 1
+    end
+    puts "The line is currently: #{deli_line.join(' ')}"
   else
-    puts "The line is currently: "
-    deli.each {|i| puts "#{deli[i]}. #{i}"}
+    puts "The line is currently empty."
   end
 end
 
