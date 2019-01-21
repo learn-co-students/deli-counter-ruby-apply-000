@@ -1,33 +1,18 @@
-# Write your code here.
-katz_deli = %w()
-other_deli = %w(Logan Avi Spencer)
-another_deli = %w(Amanda Annette Ruchi Jason Logan Spencer Avi Joe Rachel Lindsey)
-
-
-
 def line(array)
   customer_line = "The line is currently:"
 
-  if array.empty?
-    puts  "The line is currently empty."
-  else
+  return puts "The line is currently empty." if array.empty?
     array.each.with_index(1) {|name, i| customer_line.concat(" #{i}. #{name}")}
-    puts customer_line
-  end
+    puts  customer_line
 end
-
 
 def take_a_number(array, name)
     array.push(name)
-  puts "Welcome, #{name}. You are number #{array.size} in line."
+    puts "Welcome, #{name}. You are number #{array.size} in line."
 end
 
-
 def now_serving(array)
-  if array.empty?
-    puts "There is nobody waiting to be served!"
-  else
+return puts "There is nobody waiting to be served!" if array.empty?
     puts "Currently serving #{array.first}."
-      array.delete_at(0)
-  end
+    array.delete_at(0)
 end
