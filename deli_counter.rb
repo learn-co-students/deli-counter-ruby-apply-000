@@ -1,7 +1,7 @@
 def line(array)
-  customer_line = "The line is currently:"
-
   return puts "The line is currently empty." if array.empty?
+
+  customer_line = "The line is currently:"
     array.each.with_index(1) {|name, i| customer_line.concat(" #{i}. #{name}")}
     puts  customer_line
 end
