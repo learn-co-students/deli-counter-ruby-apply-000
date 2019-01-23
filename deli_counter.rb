@@ -1,7 +1,12 @@
-def take_a_number (deli, name)
-  deli.push(name)
-  number_in_line = deli.count
-  puts "Welcome, #{name}. You are number #{number_in_line} in line."
+$ticket_number=0
+def take_a_number (deli)
+  $ticket_number +=1
+  if $ticket_number == 100
+    $ticket_number = 0
+  end
+  deli.push($ticket_number)
+  number_in_line = deli[-1]
+  puts "Welcome, You are number #{number_in_line} in line."
 end
 
 def line (deli)
