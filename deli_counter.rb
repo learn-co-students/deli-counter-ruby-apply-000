@@ -33,11 +33,11 @@ def line(deli) #define line method with deli argument
   if deli.empty? #check if deli array is empty
     puts "The line is currently empty."
   else
-    current_line = "The line is currently:" #create new array with string
+    current_line = "The line is currently:"  #create variable with string
     deli.each.with_index(1) do |person, i|
-      current_line << " #{i}. #{person}" #use each and with_index to shovel position and names into end of current_line array
+      current_line << " #{i}. #{person}" #use each and with_index to shovel index position and names into end of current_line variable
     end #end each
-    puts current_line #displays the full current_line array once each operation is completed
+    puts current_line #displays the full current_line variable once each operation is completed
   end #end if
 end #end def
 
