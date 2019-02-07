@@ -12,7 +12,7 @@ def line(current_line)
     return NIL
   end
   line_string = "The line is currently:"
-  for i in 0...current_line.length do
+  current_line.length.times do |i|
     line_string += " #{(i + 1)}. #{current_line[i]}"
   end
   puts line_string
