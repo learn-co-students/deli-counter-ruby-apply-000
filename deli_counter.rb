@@ -27,7 +27,7 @@ puts take_a_number(katz_deli, name)
 
 
 def now_serving(array)
-  if array.length > 1
+  if array.length > 0
     puts "Now serving #{array.shift}"
   else
     puts "There is nobody waiting to be served"
