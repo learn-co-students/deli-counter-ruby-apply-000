@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 katz_deli = []
 
 
@@ -108,6 +107,3 @@ end
 sleep(1)
   line(katz_deli) #=> "The line is currently: 1. Kent 2. Matz"
 
-
-
->>>>>>> cd8e047d2ea09957373222fcc3aaac446339d525
