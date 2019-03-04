@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 katz_deli = []
 
 
@@ -104,6 +105,9 @@ end
   line(katz_deli) #=> "The line is currently: 1. Grace 2. Kent 3. Matz"
   sleep(1)
   now_serving(katz_deli) #=> "Currently serving Grace."
-sleep(1)
+  sleep(1)
   line(katz_deli) #=> "The line is currently: 1. Kent 2. Matz"
 
+
+
+>>>>>>> cd8e047d2ea09957373222fcc3aaac446339d525
