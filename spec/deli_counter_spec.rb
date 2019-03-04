@@ -75,38 +75,3 @@ describe 'Deli Counter' do
 
 end
 
-def line(deli)
-  
-  if deli.any? == false
-  puts "The line is currently empty."
-  end
-  
-  deli.each_with_index do |name, idx|
-      line = idx + 1
-      string = "The line is currently:"
-      string += "#{line}. #{name}"
-  end 
-  
-  puts string
-  end
-  
-end
-  
-def take_a_number( deli , name)
-  deli << name
-  position = deli.index(name) + 1
-  puts "welcome #{name}. You are number #{position}"
-end
-
-def now_serving(deli)
-  
-  if deli.any? == false
-  puts "There is nobody waiting to be served!"
-  end
-  
-  first = deli[0]
-  puts "Currently serving #{first}"
-  
-  shift.deli
-  
-end
