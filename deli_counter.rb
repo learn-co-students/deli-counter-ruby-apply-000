@@ -1,10 +1,9 @@
-katz_deli = [ ]
-
 def line(katz_deli)
-  new_array = [ ]
   if katz_deli.empty?
     puts "The line is currently empty."
   else
+    new_array = [ ]
+    #.each won't modify the original array, so you have to push the values you create into a new array
     number = 1
     katz_deli.each do |customer|
       new_array << "#{number}. #{customer}"
@@ -24,6 +23,6 @@ def now_serving(katz_deli)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli.first}."
-    katz_deli.shift #return
+    katz_deli.shift
   end
 end
