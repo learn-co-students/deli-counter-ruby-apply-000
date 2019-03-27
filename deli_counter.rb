@@ -1,5 +1,4 @@
 # Write your code here.
-require_relative '../deli_counter'
 
 # def line(katz_deli)
 #   deli = []
