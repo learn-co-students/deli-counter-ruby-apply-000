@@ -11,10 +11,9 @@ end
 puts message
 end
 
-def take_a_number(array,name)
-array << name
-position = array.index(name) + 1
-puts "Welcome #{name}. You are line in #{position}. "
+def take_a_number(array)
+linelength = array.length 
+puts "Welcome you are number #{[1..lin}"
 end
 
 def now_serving(array)
