@@ -12,10 +12,9 @@ puts message
 end
 
 def take_a_number(array)
-array.each do |ele|
-  puts "Welcome you are number is #{array.index(ele)+1}"
-end
-
+  counter = 0
+  array << counter
+  counter += 1
 end
 
 deliLine = [2, 3, 3]
