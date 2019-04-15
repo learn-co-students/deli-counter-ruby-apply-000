@@ -13,8 +13,9 @@ end
 
 def take_a_number(array)
   counter = 0
-  array << counter
   counter += 1
+  array << counter
+  puts "Welcome you are number "
 end
 
 deliLine = [2, 3, 3]
