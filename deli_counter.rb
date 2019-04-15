@@ -12,7 +12,7 @@ puts message
 end
 
 def take_a_number(array)
-  counter = 0
+0  counter = 
   counter += 1
   array << counter
   puts "Welcome you are number #{counter}"
