@@ -18,6 +18,8 @@ puts "Welcome you are number #{linelength[0]}"
 
 end
 
+deliLine = []
+
 def now_serving(array)
 if array.empty? == true
 puts "There is nobody waiting to be served!"
