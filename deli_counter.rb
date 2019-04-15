@@ -12,13 +12,13 @@ puts message
 end
 
 def take_a_number(array)
-max = array.length
-linelength = [1...max] 
-puts "Welcome you are number #{linelength[0]}"
+array.each do |ele|
+  puts "Welcome you are number is #{array.index(ele)+1}"
+end
 
 end
 
-deliLine = []
+deliLine = [2, 3, 3]
 
 def now_serving(array)
 if array.empty? == true
