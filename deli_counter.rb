@@ -15,10 +15,10 @@ def take_a_number(array)
   counter = 0
   counter += 1
   array << counter
-  puts "Welcome you are number "
+  puts "Welcome you are number #{counter}"
 end
 
-deliLine = [2, 3, 3]
+deliLine = [1]
 
 def now_serving(array)
 if array.empty? == true
