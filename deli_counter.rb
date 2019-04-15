@@ -13,7 +13,7 @@ end
 
 def take_a_number(array)
 linelength = array.length 
-puts "Welcome you are number #{[1..lin}"
+puts "Welcome you are number #{array.length}"
 end
 
 def now_serving(array)
