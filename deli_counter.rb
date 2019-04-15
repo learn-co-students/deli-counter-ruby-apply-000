@@ -19,7 +19,7 @@ def take_a_number(array)
   puts "Welcome you are number #{counter}"
 end
 
-deliLine = [1]
+deliLine = [4, 5]
 
 def now_serving(array)
 if array.empty? == true
