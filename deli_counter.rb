@@ -11,8 +11,9 @@ end
 puts message
 end
 
+counter = 0
+
 def take_a_number(array)
-0  counter = 
   counter += 1
   array << counter
   puts "Welcome you are number #{counter}"
