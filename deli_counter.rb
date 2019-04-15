@@ -12,8 +12,10 @@ puts message
 end
 
 def take_a_number(array)
-linelength = array.length 
-puts "Welcome you are number #{array.length}"
+max = array.length
+linelength = [1...max] 
+puts "Welcome you are number #{linelength[0]}"
+
 end
 
 def now_serving(array)
