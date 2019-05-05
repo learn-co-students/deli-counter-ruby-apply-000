@@ -6,7 +6,8 @@ def line(deli_line)
   else
     line_order = "The line is currently: "
     
-    line_string = deli_line.map.with_index {|customer, idx| "#{idx + 1}. #{customer}" }.join(" ")
+    line_positions = deli_line.map.with_index {|customer, idx| "#{idx + 1}. #{customer}" }
+    line_string = line_positions.join(" ")
     line_order += line_string
   end
 
@@ -16,6 +17,7 @@ end
 def take_a_number(deli_line, name)
   deli_line.push(name)
   puts "Welcome, #{name}. You are number #{deli_line.length} in line."
+  #accounts for 0th position in line becasue length is always 1 more than final index
 end
 
 def now_serving(deli_line)
