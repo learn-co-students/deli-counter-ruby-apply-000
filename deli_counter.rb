@@ -1,18 +1,30 @@
 # Write your code here.
 
-def line(deli_line)
-  string = "The line is currently:"
-
-  if deli_line.empty?
-    string = "The line is currently empty."
+def line(deli)
+  if deli.empty?
+    puts "The line is currently empty."
+  else
+    string = "The line is currently:"
+    deli.each_with_index do |person, index|
+      string += " #{index + 1}. #{person}"
+    end
+    puts string;
   end
-
-  deli_line.each_with_index do |person, index|
-    string += " #{index + 1}. #{person}"
-  end
-
-  puts string
 end
+
+# def line(deli_line)
+#   string = "The line is currently:"
+#
+#   if deli_line.empty?
+#     string = "The line is currently empty."
+#   end
+#
+#   deli_line.each_with_index do |person, index|
+#     string += " #{index + 1}. #{person}"
+#   end
+#
+#   puts string
+# end
 
 def take_a_number(deli_line, name)
   deli_line << name
