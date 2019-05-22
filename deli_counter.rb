@@ -2,6 +2,20 @@
 
 katz_deli = []
 
+def line(katz_deli)
+  if katz_deli.length == 0
+    message = "The line is currently empty."
+  else 
+    message = "The line is currently:"
+    i = 0
+    while i < katz_deli.length
+    message += " #{i+1}. #{katz_deli[i]}"
+    i += 1 
+    end
+  end
+puts message
+end
+      
 
 def take_a_number(katz_deli, name)
   katz_deli << name 
@@ -9,7 +23,7 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  if (katz_deli.length == 0)
+  if katz_deli.length == 0
     message =  "There is nobody waiting to be served!"
   else 
     message = "Currently serving #{katz_deli[0]}."
@@ -18,16 +32,3 @@ def now_serving(katz_deli)
   puts message
 end 
 
-def line(katz_deli)
-  if (katz_deli.length == 0)
-    message = "The line is currently empty."
-  else 
-    message = "The line is currently:"
-    i = 0 
-    while i < katz_deli.length
-    message = message + " " + (i+1).to_s + ". " + katz_deli[i].to_s
-    i += 1 
-    end
-  end
-puts message
-end
