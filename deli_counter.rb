@@ -1,8 +1,5 @@
-# Write your code here.
-
 katz_deli = []
 
-#show current customers in line
 def line(katz_deli)
   #output "empty" string if array contains no index
   unless katz_deli.length >= 1
@@ -21,7 +18,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, customer_name)
-  #puts the customer_name into the array 
+  #puts the customer_name into end of array 
   katz_deli << customer_name
   #find the index of the customer and add 1 to show 
   #customer's place in line (accounts for 0 index)
@@ -41,11 +38,10 @@ def now_serving(katz_deli)
 end
 =end
 
-#decide if line empty
-#output then delete first index in array if not empty
 def now_serving(katz_deli)
     empty = "There is nobody waiting to be served!"
     occupied = "Currently serving #{katz_deli.first}."
+    #check if katz_deli is empty, puts relevant string
     puts katz_deli.empty? ? empty : occupied 
-    katz_deli.shift
+    katz_deli.shift 
 end
