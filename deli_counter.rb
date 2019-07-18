@@ -15,11 +15,23 @@ def line(array)
   end
 end
 
+
+
+
 def take_a_number(array, new_customer)
   array << new_customer
   last_customer = array.length
   puts "Welcome, #{new_customer}. You are number #{last_customer} in line."
 end
+
+$counter = 0
+def take_a_number(array)
+  new_customer = $counter + 1
+  array << new_customer
+  puts "Welcome, you are number #{new_customer}"
+  $counter += 1
+end
+
 
 
 def now_serving(array)
