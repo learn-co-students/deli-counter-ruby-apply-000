@@ -1,6 +1,5 @@
 def line(katz_deli)
   order = "The line is currently:"
-  array = []
   if katz_deli.empty?
     puts "The line is currently empty." 
   else
