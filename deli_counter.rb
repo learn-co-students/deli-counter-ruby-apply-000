@@ -22,7 +22,7 @@ def line(katz_deli)
     str = "The line is currently: "
     katz_deli.each { |name|
       index += 1 
-      str << "#{index}. #{name}" }
+      str << " #{index}. #{name}" }
     puts str 
   end
 end
