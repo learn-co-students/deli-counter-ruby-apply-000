@@ -19,7 +19,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     index = 0
-    str = "The line is currently: "
+    str = "The line is currently:"
     katz_deli.each { |name|
       index += 1 
       str << " #{index}. #{name}" }
