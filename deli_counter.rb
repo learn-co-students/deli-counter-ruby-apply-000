@@ -18,8 +18,11 @@ def line(katz_deli)
   if katz_deli.length == 0 
     puts "The line is currently empty."
   else
+    index = 0
     str = "The line is currently: "
-    katz_deli.each { |name, index| str << "#{index}. #{name}" }
+    katz_deli.each { |name|
+      index += 1 
+      str << "#{index}. #{name}" }
     puts str 
   end
 end
