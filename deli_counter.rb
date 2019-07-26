@@ -20,6 +20,6 @@ def line(katz_deli)
   else
     puts "The line is currently: "
     katz_deli.each { |name, index| 
-      puts "#{index}. #{name}" }
+      print "#{index}. #{name}" }
   end
 end
