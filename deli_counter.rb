@@ -21,6 +21,5 @@ def line(katz_deli)
     print "The line is currently: "
     katz_deli.each { |name, index| 
       print "#{index}. #{name}" }
-    puts 
   end
 end
