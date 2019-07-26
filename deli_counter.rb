@@ -19,7 +19,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     print "The line is currently: "
-    katz_deli.each { |name, index| print "#{index + 1}. #{name}" }
+    katz_deli.each { |name, index| print "#{index.next}. #{name}" }
     puts 
   end
 end
