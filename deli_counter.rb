@@ -19,8 +19,8 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     print "The line is currently: "
-    katz_deli.each { |name, idx| 
-      index = idx + 1;
+    katz_deli.each { |name, index| 
+      index = index + 1;
       print "#{index}. #{name}" }
     puts 
   end
