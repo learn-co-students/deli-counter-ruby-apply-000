@@ -1,4 +1,3 @@
-# Write your code here.
 katz_deli = [ ]
 
 def line(katz_deli)
@@ -23,9 +22,13 @@ end
 
 def now_serving(katz_deli)
   if katz_deli.length>0 
-    puts "Currently serving #{katz_deli[0]}."
-    katz_deli.shift(1)
+    puts "Currently serving #{katz_deli[0]} and #{katz_deli[1]}."
+    katz_deli.shift(2)
   else 
     puts "There is nobody waiting to be served!"
   end
 end
+
+take_a_number(katz_deli, "Sophie")
+take_a_number(katz_deli, "Laura")
+now_serving(katz_deli)
