@@ -3,9 +3,9 @@ def line(array)
 
   array.each_with_index do |e, i|
     if i == array.length - 1
-      name_str += "#{i + 1}. #{array[i]}"
+      name_str += "#{i + 1}. #{e}"
     else
-      name_str += "#{i + 1}. #{array[i]} "
+      name_str += "#{i + 1}. #{e} "
     end
   end
   
@@ -27,12 +27,14 @@ def line(array)
 end
 
 
+
 def take_a_number(line, name)
   
   line.push(name)
   
   puts "Welcome, #{name}. You are number #{line.length} in line."
 end
+
 
 
 def now_serving(line)
