@@ -6,10 +6,7 @@ def line(array)
     counter = 0
     array.each do |name|
       counter +=1
-      counter.to_s
-      final_line << " #{counter}"
-      final_line << ". "
-      final_line << "#{name}"
+      final_line << " #{counter}. #{name}"
     end
     puts final_line
   end
