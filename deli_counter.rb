@@ -1,4 +1,4 @@
-class Deli_counter
+
 
 def line(katz_deli) 
   array_line = []
@@ -12,4 +12,3 @@ def line(katz_deli)
   end
 end
 
-end
