@@ -1,4 +1,7 @@
-describe 'Deli Counter' do
+require_relative './spec_helper'
+require_relative '../deli_counter.rb'
+
+describe 'Deli_counter' do
 
   let(:katz_deli) { [] }
   let(:other_deli) { ["Logan", "Avi", "Spencer"] }
