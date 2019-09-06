@@ -12,11 +12,13 @@ def line(katz_deli)
     puts "The line is currently: #{line.join(" ")}"
 end
 def take_a_number(katz_deli, name)
+  katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  
 end
 def now_serwing(katz_deli)
   if katz_deli.empty?
-    puts "There is nobody waiting to ve served!"
+    puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli[0]}"
     katz_deli.shift
