@@ -1,5 +1,6 @@
 # Starting empty 
 katz_deli = []
+bobs_deli = []
 
 # customer queuing method
 def take_a_number(array, name)
@@ -8,25 +9,24 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number #{position+=1} in line."
 end
 
-# initial wave of customers in shop
-take_a_number(katz_deli, "Ada")
-take_a_number(katz_deli, "Grace")
-take_a_number(katz_deli, "Kent")
+take_a_number(katz_deli, "Logan")
+take_a_number(katz_deli, "Avi")
+take_a_number(katz_deli, "Spencer")
 
 # customer queue status update method
 def line(array)
   if array.empty? == true 
     puts "The line is currently empty."
-  else
+  else 
     queue = "The line is currently: "
     array.each_with_index do |value, index|
       queue += "#{index+=1}. #{value} "
+    update = queue
     end 
-    puts queue
+    puts update
   end 
 end
 
-# customer queue status update
 line(katz_deli)
 
 # customer service update method
@@ -40,17 +40,22 @@ def now_serving(array)
   end 
 end
 
-# customer service update method
 now_serving(katz_deli)
 
-# customer named Matz enters the shop
-take_a_number(katz_deli, "Matz")
-
-# customer queue status update #2
 line(katz_deli)
 
-# customer service update #2
 now_serving(katz_deli)
 
+take_a_number(bobs_deli, "Amanda")
+take_a_number(bobs_deli, "Annette")
+take_a_number(bobs_deli, "Ruchi")
+take_a_number(bobs_deli, "Jason")
+take_a_number(bobs_deli, "Spencer")
+take_a_number(bobs_deli, "Logan")
+take_a_number(bobs_deli, "Avi")
+take_a_number(bobs_deli, "Joe")
+take_a_number(bobs_deli, "Rachel")
+take_a_number(bobs_deli, "Lindsay")
 
+line(bobs_deli)
   
