@@ -17,15 +17,9 @@ end
 
 def line(katz_deli) 
   	if katz_deli.length > 0
-      i = 0
-      puts "The line is currently: "
-      while i < katz_deli.length
-      puts  (i + 1).to_s + ". " + katz_deli[i].to_s 
-
-      i += 1
-      end      
+      puts "The line is currently:" 
+      puts katz_deli.each_with_index { |katz_deli, index| puts "#{index + 1}. #{katz_deli}" }
     else
-  	  
       puts "The line is currently empty."
     end
 end
@@ -42,21 +36,7 @@ def now_serving(katz_deli)
 end
 
 take_a_number(katz_deli, "Ada")
-
-puts "\n"
-
-line(katz_deli)
-
-puts "\n"
-
 take_a_number(katz_deli, "Grace")
-
-puts "\n"
-
-line(katz_deli)
-
-puts "\n"
-
 take_a_number(katz_deli, "Kent")
 
 puts "\n"
