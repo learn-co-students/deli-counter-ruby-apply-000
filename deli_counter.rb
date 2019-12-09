@@ -1,4 +1,16 @@
+require "pry" 
+
 katz_deli = []
+
+def line(katz_deli) 
+  	if katz_deli.length > 0
+      line_status = "The line is currently: " 
+      katz_deli.each_with_index { |katz_deli, index| line_status << "#{index + 1}. #{katz_deli} " }
+      puts line_status.delete_suffix(" ")
+    else
+      puts "The line is currently empty."
+    end
+end
 
 def take_a_number(katz_deli, person)
   	if katz_deli.length == 0
@@ -12,19 +24,6 @@ def take_a_number(katz_deli, person)
     end
 
 end
-
-
-
-def line(katz_deli) 
-  	if katz_deli.length > 0
-      puts "The line is currently:" 
-      puts katz_deli.each_with_index { |katz_deli, index| puts "#{index + 1}. #{katz_deli}" }
-    else
-      puts "The line is currently empty."
-    end
-end
-    
-
 
 def now_serving(katz_deli)
 	if katz_deli.length == 0
