@@ -25,6 +25,13 @@ def take_a_number(katz_deli, person)
 
 end
 
+$ticket = 0
+def take_a_number(katz_deli)
+  $ticket += 1
+  katz_deli << $ticket
+  puts "Welcome you have ticket number " + $ticket
+end
+
 def now_serving(katz_deli)
 	if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
