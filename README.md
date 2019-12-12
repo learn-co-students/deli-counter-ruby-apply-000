@@ -49,3 +49,14 @@ Example usage:
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/deli-counter' title='Deli Counter - Take a Number'>Deli Counter - Take a Number</a> on Learn.co and start learning to code for free.</p>
+
+take_a_number(katz_deli, "Ada") 
+take_a_number(katz_deli, "Grace")
+take_a_number(katz_deli, "Kent") 
+line(katz_deli)
+now_serving(katz_deli) 
+line(katz_deli)
+take_a_number(katz_deli, "Matz"
+line(katz_deli)
+now_serving(katz_deli) 
+line(katz_deli)
