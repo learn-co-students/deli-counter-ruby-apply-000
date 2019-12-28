@@ -5,7 +5,7 @@ def take_a_number(deli, person)
   #Step 1: Add the person to the end line
   deli.push(person)
   
-  #Step 3: Output their place in line
+  #Step 2: Welcome and output the person's place in line
   puts "Welcome, #{person}. You are number #{(deli.length).to_s} in line."
 end
 
@@ -36,6 +36,7 @@ def now_serving(deli)
   if (deli.any? == FALSE)
     puts "There is nobody waiting to be served!"
   
+  #If the line is not empty, return who is first in line and remove them from the line
   else 
     puts "Currently serving #{deli[0]}."
     deli.shift
