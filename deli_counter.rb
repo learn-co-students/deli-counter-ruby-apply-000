@@ -2,28 +2,42 @@
 
 katz_deli = []
 
-def line(katz_deli)
-  line = []
-  if katz_deli.length == 0 
-    puts 'The line is currently empty.'
-  else
-    katz_deli.each.with_index(1) do |customer_name, line_number|
-      line.push("#{line_number}. #{customer_name}")
+def line(deli)
+    if deli.empty?
+        puts 'The line is currently empty.'
+        return
     end
-    puts "The line is currently: #{line.join(" ")}"
-  end
+    formatted_deli = deli.each_with_index.map do |name, index|
+        "#{index + 1}. #{name}"
+    end.join " "
+    puts "The line is currently: #{formatted_deli}"
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+def take_a_number(deli, customer_name)
+    deli << customer_name
+    puts "Welcome, #{customer_name}. You are number #{deli.count} in line."
 end
- 
-def now_serving(katz_deli)
-  if katz_deli.length == 0
-    puts 'There is nobody waiting to be served!'
-  else
-    puts "Currently serving #{katz_deli[0]}."
-    katz_deli.shift
-  end
+
+def now_serving(deli)
+    if deli.empty?
+        puts 'There is nobody waiting to be served!'
+        return
+    end
+    puts "Currently serving #{deli.shift}."
 end
+
+take_a_number(katz_deli, 'Ada')
+take_a_number(katz_deli, 'Grace')
+take_a_number(katz_deli, 'Kent')
+
+line(katz_deli)
+
+now_serving(katz_deli)
+
+line(katz_deli)
+
+take_a_number(katz_deli, 'Matz')
+
+line(katz_deli)
+
+now_serving(katz_deli)
