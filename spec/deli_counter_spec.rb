@@ -1,3 +1,4 @@
+
 describe 'Deli Counter' do
 
   let(:katz_deli) { [] }
