@@ -2,14 +2,13 @@ def line(katz_deli = [])
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    starting_str = "The line is currently: " 
     line = []
 
     katz_deli.each_with_index do |name, position|
       line << (position + 1).to_s + ". " + name
     end
     
-    puts starting_str + line.join(" ")
+    puts "The line is currently: " + line.join(" ")
   end
 end
 
