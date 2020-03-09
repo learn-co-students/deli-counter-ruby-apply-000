@@ -1,14 +1,24 @@
 # Write your code here.
 
+#line did not work when using:
+# -- start of -- if queue.length < 0
+# print "The line is currently:"
+# i = 0
+#   while i < queue.length
+#     print " #{i+1}. #{queue[i]}"
+#     i += 1
+#   end
+# puts ""
+# -- end -- 
 def line(queue)
   if queue.length > 0
-    print "The line is currently:"
+    msg = "The line is currently:"
     i = 0
     while i < queue.length
-      print " #{i+1}. #{queue[i]}"
+      msg += " #{i+1}. #{queue[i]}"
       i += 1
     end
-    puts ""
+    puts msg
   else 
     puts "The line is currently empty."
   end
