@@ -1,14 +1,12 @@
-katz_deli = []
-
 def line(katz_deli)
   if katz_deli != []
-    counter = 1
-    line = "The line is currently: "
-    while counter <= katz_deli.length
-      line = line + "#{counter}. #{katz_deli[counter - 1]} "
+    counter = 0
+    current_line = "The line is currently: "
+    katz_deli.each do |name|
+      current_line = current_line + "#{counter + 1}. #{name} "
       counter += 1
     end
-    puts line.chop
+    puts current_line.strip
   else
     puts "The line is currently empty."
   end
