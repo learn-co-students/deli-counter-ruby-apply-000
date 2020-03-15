@@ -1,5 +1,6 @@
-katz_deli = Array.new # defines an empty array that represents the empty queue at Katz Deli before it opens (no customers yet.) Arrays are one of the most commonly used data structures in Ruby
-                      # katz_deli = [] would also work in place of katz_deli = Array.new
+katz_deli = []
+ # defines an empty array that represents the empty queue at Katz Deli before it opens (no customers yet.) Arrays are one of the most commonly used data structures in Ruby
+                      # katz_deli = Array.new would also work in place of katz_deli = []
 
 def take_a_number(array, name) #defines the take_a_number method using an array's coorindnates with an assosicated sequence of names.
   array.push(name) # ".push' takes the names and adds them to end of the array, pushing forward the next person in line.
