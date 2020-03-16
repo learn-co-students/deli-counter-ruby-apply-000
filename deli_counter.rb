@@ -18,10 +18,10 @@ def line(array) #line method is defined here using the empty katz_deli array tha
   else #Otherwise....
     message = "The line is currently:" #If a line value is returned other than 0, the line order based on take_a_number will be listed.
 
-  array.each_with_index do |value, index|
-    message += " #{index.to_i+1}. #{value}"
+  array.each_with_index do |value, index| #The each_with_index allows you to iterate over items along with an index keeping count of the item. |value, index| gives the the items value and place within index.
+    message += " #{index.to_i+1}. #{value}" #This converts the beginning value of 0 to 1 to translate into a physical ticket the person in line is holding.
   end
-  puts "#{message}"
+  puts "#{message}" #The amalgamated message is sent here
   end
 end
 
