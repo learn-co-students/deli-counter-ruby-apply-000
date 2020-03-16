@@ -12,6 +12,13 @@ take_a_number(katz_deli, "Ada_Lovelace") #=> Welcome, Ada Lovelace. You are numb
 take_a_number(katz_deli, "Grace_Hopper") #=> Welcome, Grace Hopper. You are number 2 in line.
 take_a_number(katz_deli, "Autumn_Kent")  #=> Welcome, Autumn Kent. You are number 3 in line.
 
+                                         #alt take_a_number method
+# def take_a_number(katz_deli)
+# ticket_number + 1
+# katz_deli.push(ticket_number)
+# puts "Ticket #{ticket_number}"
+# end
+
 def line(katz_deli) #line method is defined here using the empty katz_deli array that is filled by the customers entering the deli and taking a number to wait in line.
   if katz_deli.length == 0 #if no one is in line then the point in the array, katz_deli, would have to be 0.
     puts "The line is currently empty." # This instance delivers this message
