@@ -18,7 +18,7 @@ def line(katz_deli) #line method is defined here using the empty katz_deli array
   else #Otherwise....
     message = "The line is currently:" #If a line value is returned other than 0, the line order based on take_a_number will be listed.
 
-katz_deli.each_with_index do |value, index| #The each_with_index allows you to iterate over items along with an index keeping count of the item. |value, index| gives the the items value and place within index.
+katz_deli.each_with_index do |value, index| # each_with_index only starts index at 0. There's no optional starting index point, like with with_index. each_with_index allows you to iterate over items along with an index keeping count of the item. |value, index| gives the the items value and place within index or indexed array, katz_deli
     message += " #{index.to_i+1}. #{value}" #This converts the beginning value of 0 to 1 to translate into a physical ticket the person in line is holding.
   end
   puts "#{message}" #The amalgamated message is sent here
