@@ -25,12 +25,12 @@ def line(array) #line method is defined here using the empty katz_deli array tha
   end
 end
 
-line(katz_deli)
+line(katz_deli) #Calls upon the existing line at Katz Deli
 
-def now_serving(array) # The now_serving method calls out the next person in line and then removes them from the front.
+def now_serving(array) # The now_serving method calls out the next person in line.
   if array.empty? == true
     puts "There is nobody waiting to be served!" # If nobody is in line, now_serving calls out/puts the message "There is nobody waiting to be served!"
   elsif array.empty? == false
-    puts "Currently serving #{array.shift}."
+    puts "Currently serving #{array.shift}." #array.shift removes the first element of self and returns it (shifting all other elements down by one.) Effectively those waiting in line are served in the seqeuence of the queue at Katz Deli. Removing the first element in the array so that the next can be served.
   end
 end
