@@ -1,4 +1,5 @@
-katz_deli = []
+#katz_deli = [] # defines an empty array that represents the empty queue at Katz Deli before it opens (no customers yet.) Arrays are one of the most commonly used data structures in Ruby
+                katz_deli = Array.new # would also work in place of katz_deli = []
 
 def take_a_number(array, name)
   array.push(name)
