@@ -13,11 +13,11 @@ take_a_number(katz_deli, "Ada Lovelace") #=> Welcome, Ada Lovelace. You are numb
 take_a_number(katz_deli, "Grace Hopper") #=> Welcome, Grace Hopper. You are number 2 in line.
 take_a_number(katz_deli, "Autumn Kent")  #=> Welcome, Autumn Kent. You are number 3 in line.
 
-def line(array)
-  if array.length == 0
-    puts "The line is currently empty."
-  else
-    message = "The line is currently:"
+def line(array) #line method is defined here using the empty katz_deli array that is filled by the customers entering the deli and taking a number to wait in line.
+  if array.length == 0 #if no one is in line then the point in the array would have to be 0.
+    puts "The line is currently empty." # This instance delivers this message
+  else                                  #Otherwise....
+    message = "The line is currently:" #If a line value is returned other than 0, the line order based on take_a_number will be listed.
 
   array.each_with_index do |value, index|
     message += " #{index.to_i+1}. #{value}"
@@ -28,10 +28,9 @@ end
 
 line(katz_deli)
 
-
-def now_serving(array)
-  if array.empty? == true
-    puts "There is nobody waiting to be served!"
+def now_serving(array) # The now_serving method calls out the next person in line and then removes them from the front.
+    puts "There is nobody waiting to be served!" # If nobody is in line, now_serving calls out/puts the message "There is nobody waiting to be served!"
+      if array.empty? == true
   elsif array.empty? == false
     puts "Currently serving #{array.shift}."
   end
