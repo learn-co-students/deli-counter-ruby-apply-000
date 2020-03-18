@@ -7,6 +7,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     line_now = "The line is currently:"
+    # katz_deli.each.with_index do |person, i|
     katz_deli.map.with_index do |person, i|
       line_now << " #{i+1}. #{person}"
     end
