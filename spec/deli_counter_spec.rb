@@ -1,3 +1,5 @@
+require_relative './spec_helper.rb'
+
 describe 'Deli Counter' do
 
   let(:katz_deli) { [] }
