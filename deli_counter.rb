@@ -20,6 +20,23 @@ def take_a_number(katz_deli, name)
     puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
+# First, generate a number
+# Give customer the next number in line
+# Print out the same
+# Deli line will be empty, first customer will get number 1 etc.
+
+# number = 1
+#
+# def take_a_number_person_number(katz_deli, number)
+#   if katz_deli.empty?
+#     number = 0
+#   else
+#     number = katz_deli.last
+#   number += 1
+#   katz_deli << number
+#   puts "Welcome, your number is #{number}."
+# end
+
 def now_serving(katz_deli)
   if katz_deli.empty?
     puts "There is nobody waiting to be served!"
