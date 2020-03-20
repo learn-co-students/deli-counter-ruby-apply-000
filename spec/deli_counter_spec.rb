@@ -1,4 +1,4 @@
-require_relative './spec_helper.rb'
+require_relative '../deli_counter'
 
 describe 'Deli Counter' do
 
