@@ -1,17 +1,18 @@
 # Write your code here.
 
-def line(names)
-  if names.empty?
-puts "The line is currently empty."
+def line(customer_line)
+ i=1
+ line_now = "The line is currently:"
+  customer_line.each do |m|
+    line_now+= " #{i}. #{m}"
+    i+=1
+  end
+    if customer_line.empty?
+      puts "The line is currently empty."
 else
-  current_line="The line is currently:"
-  names.each.with_index(1) do |name,i|
-  current_line+= " #{i}. #{name}"
-end
-puts current_line
+puts line_now
 end
 end
-
 def take_a_number (customer_line,new_customer)
   customer_line << new_customer
   puts "Welcome, #{new_customer}. You are number #{customer_line.length} in line."
