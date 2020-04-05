@@ -2,7 +2,7 @@ def line(katz_deli)
   i = 0
   output = ""
   while i < katz_deli.length
-    output << " " + "#{i + 1}" + ". " + "#{katz_deli[i]}"
+    output << " #{i + 1}. " + katz_deli[i]
     i += 1
   end
   if katz_deli.length == 0
