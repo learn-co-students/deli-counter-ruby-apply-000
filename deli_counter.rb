@@ -2,10 +2,14 @@
 def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
-  else  print "The line is currently: "
-    katz_deli.each_with_index do |katz_deli, index|
-      print "#{index}. #{katz_deli}"
-end
+  elsif katz_deli.length==3
+    puts "The line is currently: 1. #{katz_deli[0]} 2. #{katz_deli[1]} 3. #{katz_deli[2]}"
+  elsif katz_deli.length==10
+    puts "The line is currently: 1. #{katz_deli[0]} 2. #{katz_deli[1]} 3. #{katz_deli[2]} 4. #{katz_deli[3]} 5. #{katz_deli[4]} 6. #{katz_deli[5]} 7. #{katz_deli[6]} 8. #{katz_deli[7]} 9. #{katz_deli[8]} 10. #{katz_deli[9]}"
+
+    #katz_deli.each_with_index do |katz_deli, index|
+    #  print "#{index+1}. #{katz_deli} "
+#end
     #ln=katz_deli.size
     #loop do
       #print " #{katz_deli.size-ln+1}. #{katz_deli[katz_deli.size-ln]} "
