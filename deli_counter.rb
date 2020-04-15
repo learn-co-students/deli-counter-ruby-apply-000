@@ -14,11 +14,7 @@ end
 
 
 def take_a_number (katz_deli, new_name)
-if katz_deli.empty? == false
   katz_deli << new_name
-else
-  katz_deli.unshift(new_name)
-  end
   puts "Welcome, #{new_name}. You are number #{katz_deli.count} in line."
 end
 
