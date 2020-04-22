@@ -18,10 +18,9 @@ end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-  add_line = "You are number "
-  #do I need lines 20 and 21?
-  add_line << " #{katz_deli.length} in line."
+  #shovel method to put customer at end of the line
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  #.length returns number of elements in array
 end
 
 def now_serving(katz_deli)
