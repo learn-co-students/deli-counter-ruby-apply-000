@@ -1,7 +1,7 @@
 #Start of day the deli is empty so the queue is represented by an empty array
 #functions varible with empty array
 katz_deli = []
-#function once called it takes argument from else where in the code and saves it 
+#function once called it takes argument from else where in the code and saves it
 def line(katz_deli_array)
   #function stores numerous items or elements from below code
   line_positions = []
@@ -31,4 +31,16 @@ def now_serving(katz_deli_array)
     puts "Currently serving #{katz_deli_array.first}."
     katz_deli_array.shift
   end
+end
+Ticket = { }
+def take_a_number(ticket)
+  ticket.each do |number|
+
+end
+number = "1"
+ticket << number
+puts "You are ticket #{ticket}"
+number = "4"
+ticket << number
+puts "You are ticket #{ticket}"
 end
