@@ -1,25 +1,26 @@
 # Write your code here.
+deli = []
 
-def line(katz_deli)
-  if katz_deli.size == 0
+def line(deli)
+  if deli.size == 0
     puts "The line is currently empty."
   else
     current_line = "The line is currently:"
-    katz_deli.map.with_index(1) {|name,i|current_line << " #{i}. #{name}"}
+    deli.map.with_index(1) {|name, ind| current_line << " #{ind}. #{name}"}
     puts current_line
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
+def take_a_number(deli, name)
+  deli.push(name)
+  puts "Welcome, #{name}. You are number #{deli.size} in line."
 end
 
-def now_serving(katz_deli)
-  if katz_deli.length == 0
+def now_serving (deli)
+  if deli.length == 0
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{katz_deli[0]}."
-    katz_deli.shift
+    puts "Currently serving #{deli[0]}."
+    deli.shift
   end
 end
