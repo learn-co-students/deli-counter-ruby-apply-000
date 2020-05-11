@@ -23,6 +23,6 @@ def now_serving(katz_deli) #takes one argument (katz_deli array)
   if !katz_deli.empty? #if katz_deli array is NOT empty...
     puts "Currently serving #{katz_deli.shift}." #puts the customer currently being served. Use #.shift which will return the first element in array and remove it from the katz_deli array.
   else #if katz_deli array IS empty...
-    puts "There is nobody waiting to be served!" #let the people know it is time to order that second Ruben sandwich!
+    puts "There is nobody waiting to be served!" #let the people know it is time to order that second Reuben sandwich!
   end #end of if statement
 end #end method definition
