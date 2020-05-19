@@ -1,3 +1,40 @@
+ddef line(katz_deli)
+  if katz_deli.length == 0
+    puts "The line is currently empty."
+  elsif katz_deli.length > 0
+    res = "The line is currently: "
+    katz_deli.each_with_index do |e,i|
+      res = res + "#{i+1}." + " " + "#{e} "
+    end
+  end
+  print res
+end
+
+# line(["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"])
+
+
+
+def take_a_number(katz_deli, name)
+  arr = katz_deli.push(name)
+  last = katz_deli.index(name)
+  print "Welcome, " + arr[-1] + ". " + "You are number #{last+1} in line."
+end
+
+# take_a_number(["Logan", "Avi", "Spencer"], "Grace")
+
+
+
+def now_serving(katz_deli)
+  if katz_deli.length == 0
+    puts "There is nobody waiting to be served!"
+  elsif katz_deli.length > 0
+    puts "Currently serving #{katz_deli[0]}."
+    katz_deli.shift()
+    puts line(katz_deli)
+  end
+end
+# now_serving([])
+
 describe 'Deli Counter' do
 
   let(:katz_deli) { [] }
