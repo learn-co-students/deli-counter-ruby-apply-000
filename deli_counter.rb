@@ -15,7 +15,7 @@ def list_line(katz_deli)
   display = []
   i = 1
   katz_deli.each do |name|
-    name = katz_deli[i-1]
+    #name = katz_deli[i-1]
     display = display.append("#{i}. #{name}")
     i += 1
   end
