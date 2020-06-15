@@ -1,3 +1,5 @@
+require_relative '../deli_counter'
+
 describe 'Deli Counter' do
 
   let(:katz_deli) { [] }
