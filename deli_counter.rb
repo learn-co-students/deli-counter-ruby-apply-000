@@ -1,8 +1,6 @@
 # Write your code here.
 
 katz_deli = []
-other_line = ["Logan", "Avi", "Spencer"]
-another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"] 
 
 def line (customers)
   
@@ -38,9 +36,3 @@ def now_serving(customers)
       end
     customers.shift
 end
-
-take_a_number(katz_deli, "Ada")
-take_a_number(katz_deli, "Bob")
-line(katz_deli)
-now_serving(katz_deli) 
-line(katz_deli)
