@@ -3,12 +3,8 @@
 katz_deli = []
 
 def line (customers)
-  
-  #if line if empty dipslay "The line is currently empty"
   if customers.length == 0 
     puts "The line is currently empty."
-  
-  #if there are customers display their position and name
   
   elsif customers.length > 0
           phrase = "The line is currently:"
@@ -18,15 +14,13 @@ def line (customers)
       puts phrase
     end
   end
-  
-#--------------------------------------------------------- 
+
 
 def take_a_number (customers, name)
   customers.push(name)
   puts "Welcome, #{name}. You are number #{customers.index(name) + 1} in line."
 end
 
-#--------------------------------------------------------------
 
 def now_serving(customers)
       if customers.length == 0
@@ -36,3 +30,11 @@ def now_serving(customers)
       end
     customers.shift
 end
+
+=begin
+take_a_number(katz_deli, "Ada")
+take_a_number(katz_deli, "Bob")
+line(katz_deli)
+now_serving(katz_deli) 
+line(katz_deli)
+=end
