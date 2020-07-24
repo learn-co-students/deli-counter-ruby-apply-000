@@ -26,7 +26,7 @@ def line(array)
 end
 
 line(deli)
-
+take_a_number(deli,"Chris")
 
 def now_serving(array)
   if array.empty? == true
