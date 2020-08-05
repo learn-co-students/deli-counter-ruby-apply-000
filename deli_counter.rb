@@ -1,12 +1,12 @@
 katz_deli = []
 
-def line(katz_deli)
+def line(myArray)
   line_positions = [];
-  if katz_deli.empty?
+  if myArray.empty?
     puts "The line is currently empty."
   else
     number = 1
-    katz_deli.each do |customer|
+    myArray.each do |customer|
       line_positions << "#{number}. #{customer}"
       number += 1
     end
@@ -14,16 +14,18 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
+def take_a_number(x, name)
+  x << name
+  puts "Welcome, #{name}. You are number #{x.size} in line."
 end
 
-def now_serving(katz_deli)
-  if katz_deli.empty?
+def now_serving(myArray)
+  if myArray.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{katz_deli.first}."
-    katz_deli.shift
+    puts "Currently serving #{(myArray.shift)}."
   end
 end
+
+take_a_number(katz_deli, "Kent") 
+line(katz_deli)
