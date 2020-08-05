@@ -28,4 +28,6 @@ def now_serving(myArray)
 end
 
 take_a_number(katz_deli, "Kent") 
+take_a_number(katz_deli, "alpha") 
 line(katz_deli)
+p katz_deli
