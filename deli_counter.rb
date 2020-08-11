@@ -1,30 +1,31 @@
 #Checking if anybody is currently in the line and listing out current line if so
 katz_deli = []
 
-def line(queue)
-   deli_line = []
-   if queue.length == 0
+#Communicating how long the line is
+def line(katz_deli)
+   if katz_deli.empty?
      puts "The line is currently empty."
    else
-     queue.each.with_index(1) do |name, index|
-     deli_line.push("#{index}. #{name}")
+     the_line = "The line is currently:"
+     katz_deli.each.with_index(1) do |customer, i| #iterating through the line to get each person's spots spot
+       the_line << " #{i}. #{customer}" #Adding the numebr of each customer and their name to the line
    end
-   puts "The line is currently: #{deli_line.join(" ")}"
+   puts the_line
   end
 end
 
 #Adding a person to the end of the line and welcoming them
-def take_a_number(katz_deli,person)
-  katz_deli.push(person)
-  puts "Welcome, #{person}. You are number #{katz_deli.length} in line."
+def take_a_number(katz_deli,customer)
+  katz_deli << customer
+  puts "Welcome, #{customer}. You are number #{katz_deli.length} in line."
 end
 
-#Calling out the first person in the line
+#Greeting the first person in the line
 def now_serving(katz_deli)
-  if katz_deli.length < 1
+  if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli[0]}."
-    katz_deli.delete_at(0)
+    katz_deli.shift
   end
 end
