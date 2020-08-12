@@ -8,11 +8,11 @@ def line(katz_deli)
   current_line = "The line is currently:"
   if katz_deli == []
     puts "The line is currently empty."
-    else
-      katz_deli.each do |name_in_line|
-        current_line << " #{place_in_line(katz_deli, name_in_line)}. #{name_in_line}"
-      end
-    puts current_line
+  else
+    katz_deli.each do |name_in_line|
+      current_line << " #{place_in_line(katz_deli, name_in_line)}. #{name_in_line}"
+    end
+  puts current_line
   end
 end
 
@@ -24,7 +24,7 @@ end
 def now_serving(katz_deli)
   if katz_deli == []
     puts "There is nobody waiting to be served!"
-    else
+  else
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   end
