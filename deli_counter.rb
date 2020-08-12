@@ -35,23 +35,17 @@ def now_serving(katz_deli)
 end
 
 take_a_number(katz_deli, "Logan")
-
 take_a_number(katz_deli, "Avi")
-
 take_a_number(katz_deli, "Spencer")
 
 line(katz_deli)
-
 now_serving(katz_deli)
 
 line(katz_deli)
-
 now_serving(katz_deli)
 
 line(katz_deli)
-
 now_serving(katz_deli)
 
 line(katz_deli)
-
 now_serving(katz_deli)
