@@ -1,9 +1,11 @@
 katz_deli = []
 
+#place_in_line: a helper method that converts the array index of the person in line to their place in line
 def place_in_line(katz_deli, name)
   katz_deli.index(name) + 1
 end
 
+#line: outputs a string of the current state of the line
 def line(katz_deli)
   current_line = "The line is currently:"
   if katz_deli == []
@@ -16,11 +18,13 @@ def line(katz_deli)
   end
 end
 
+#take_a_number: takes the name of a new customer, inserts it to the end of the line array, and outputs a string welcoming the customer and notifying them of their place in line
 def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{place_in_line(katz_deli, name)} in line."
 end
 
+#now_serving: outputs a string if there is nobody waiting to be served, otherwise the name of the next person being served, and removes them from the beginning of the line array
 def now_serving(katz_deli)
   if katz_deli == []
     puts "There is nobody waiting to be served!"
