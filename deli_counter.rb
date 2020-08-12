@@ -7,14 +7,14 @@ end
 
 #line: outputs a string of the current state of the line
 def line(katz_deli)
-  current_line = "The line is currently:"
-  if katz_deli == []
+  if katz_deli.empty?
     puts "The line is currently empty."
   else
+    current_line = "The line is currently:"
     katz_deli.each do |name_in_line|
       current_line << " #{place_in_line(katz_deli, name_in_line)}. #{name_in_line}"
     end
-  puts current_line
+    puts current_line
   end
 end
 
@@ -26,7 +26,7 @@ end
 
 #now_serving: outputs a string if there is nobody waiting to be served, otherwise the name of the next person being served, and removes them from the beginning of the line array
 def now_serving(katz_deli)
-  if katz_deli == []
+  if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli[0]}."
