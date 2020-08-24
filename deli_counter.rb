@@ -1,13 +1,13 @@
 # Write your code here.
 katz_deli = []
 
-def line(katz_deli) 
+def line(katz_deli)
 
   if katz_deli.none?
     puts "The line is currently empty."
-  else  
+  else
     line_info = []
-    counter = 1 
+    counter = 1
     katz_deli.each do |customer|
       line_info << "#{counter}. #{customer}"
       counter += 1
@@ -22,10 +22,9 @@ def take_a_number(katz_deli, customer)
 end
 
 def now_serving(katz_deli)
-  if katz_deli.none? 
+  if katz_deli.none?
     puts "There is nobody waiting to be served!"
-  else 
+  else
     puts "Currently serving #{katz_deli.shift}."
-  end 
-end 
-  
+  end
+end
