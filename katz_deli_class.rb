@@ -1,16 +1,16 @@
 class KatzDeli
 
   def initialize
-    @katz_deli = []
+    @katz_deli = ["Amy" , "Mike" , "Mike2"]
   end
 
 
-  def line(array)
+  def line
     new_line_array = []
-    if array.length == 0
+    if @katz_deli.length == 0
       puts "The line is currently empty."
     else
-      array.each.with_index(1) do |name,  index|
+      @katz_deli.each.with_index(1) do |name,  index|
         new_line_array << "#{index}. #{name}"
       end
       puts "The line is currently: #{new_line_array.join(" ")}"
@@ -19,7 +19,7 @@ class KatzDeli
 
   def take_a_number(name)
     @katz_deli << name
-    if katz_deli.length != 0
+    if @katz_deli.length != 0
       puts "Welcome, #{name}. You are number #{@katz_deli.length} in line."
     end
   end
@@ -34,10 +34,6 @@ class KatzDeli
 
 
 end
-
-
-new_line = KatzDeli.new
-new_line.now_serving
 
 
 
