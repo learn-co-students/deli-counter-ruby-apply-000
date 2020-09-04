@@ -1,6 +1,6 @@
 katz_deli = []
 $current_line = []
-# print out the current line, if there is no line, print empty line
+
 def line(arr)
   if arr.empty?
     puts "The line is currently empty." 
