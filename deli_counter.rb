@@ -34,10 +34,6 @@ def now_serving(katz_deli)
   else
     first = katz_deli.shift()
     puts "Currently serving #{first}."
-    # katz_deli.each do |name|
-    #   name = katz_deli.shift()
-    #   puts "Currently serving #{name}."
-    # end
   end
 end
 
