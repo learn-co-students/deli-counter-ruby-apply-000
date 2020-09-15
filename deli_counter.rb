@@ -4,11 +4,11 @@ katz_deli = []
 
 #line Method
 def line(katz_deli)
-  if katz_deli.length == 0 #determine the lenth of the array = of the line
+  if katz_deli.length == 0 #determine the lenth of the line
     puts "The line is currently empty."
   else
     list = "The line is currently:"
-    katz_deli.each_with_index do |name, index| #allows to iterate over items along with an index keeping count of the item
+    katz_deli.each_with_index do |name, index| #each_with_index Method allows to iterate over items along with an index keeping count of the item
     list += " #{index.to_i+1}. #{name}" #Remember that people like to count from 1, not from 0 like computers
     end
     puts "#{list}"
