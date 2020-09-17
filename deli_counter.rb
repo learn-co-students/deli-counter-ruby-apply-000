@@ -28,9 +28,9 @@ line(katz_deli)
 
 
 def now_serving(array)
-  if array.empty? == true
+  if array.length == 0
     puts "There is nobody waiting to be served!"
-  elsif array.empty? == false
+  elsif 
     puts "Currently serving #{array.shift}."
   end
 end
