@@ -23,9 +23,6 @@ def line(array)
   puts "#{message}"
   end 
 end 
- 
-line(katz_deli)
-
 
 def now_serving(array)
   if array.empty? == true 
@@ -34,5 +31,3 @@ def now_serving(array)
     puts "Currently serving #{array.shift}."
   end 
 end 
-
-now_serving(katz_deli)
