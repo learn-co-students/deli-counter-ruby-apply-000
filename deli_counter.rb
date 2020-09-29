@@ -35,4 +35,7 @@ def now_serving(line)
     line.shift
   end
 end 
+
+now_serving([])
+now_serving(["Daniel", "Erin", "Susan"])
   
