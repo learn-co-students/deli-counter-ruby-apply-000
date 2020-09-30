@@ -15,6 +15,7 @@ def line(current_line)
 end
 
 #test
+line([])
 line(["Daniel", "Erin", "Susan"])
 
 
@@ -38,4 +39,5 @@ end
 
 now_serving([])
 now_serving(["Daniel", "Erin", "Susan"])
+
   
