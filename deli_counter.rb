@@ -1,8 +1,11 @@
+#goal of my program is to create a computerized queue to keep track of customers (Ada, Kent, Grace) and improve productivity
+
+
 #this is the beginning of the day. Currently there are no customers, so an empty katz's is represented by an empty array.
 katz_deli = []
 
 #line method
-#defining our line method, using the argument of katz_deli. using an if else conditional statement here to tell my program to make a decision.
+#I'm defining my line method using the argument "katz_deli."" I'm using an if else conditional statement here to tell my program to make a decision.
 def line(katz_deli)
  length = "The line is currently:"
 #i'm using a string class method (.length) here to calculate the character length of the array "katz_deli."
@@ -11,7 +14,7 @@ def line(katz_deli)
     else
 #I'm enumerating the katz_deli array to get the name of the customer and index to calculate the customer's position on line.
        katz_deli.each_with_index do |name, index|
-#I'm using shorthand operator += to signify saying my variable "length" is equal to variable "index" + variable "name"
+#I'm using shorthand operator += to signify my variable "length" is equal to variable "length" variable "index+1 + name"
 #Additionally, I'm interpolating my variables below to make my code clean, and legible.
       length += " #{index+1}. #{name}"
     end
@@ -20,12 +23,12 @@ def line(katz_deli)
 end
 
 #Next, I'm building a new method that a new customer will use when entering the deli.
-#defining our take_a_number method with 2 arguments (katz_deli, name) Name signifies the name of the custoemr. In this Program would be Ada, Kent, Grace
+#defining our take_a_number method with 2 arguments (katz_deli, name) Name signifies the name of the custoemr. In this Program would be Ada, Grace, Kent
 #using the shovel operator << lets me add the name of customers to the end of the array.
 def take_a_number (katz_deli, name)
-  katz_deli << name
-  if katz_deli == 0
-    puts "The line is currently empty."
+   katz_deli << name
+    if katz_deli == 0
+      puts "The line is currently empty."
        else
 # .length returns number of names in katz_deli array.
     puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
