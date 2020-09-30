@@ -11,7 +11,7 @@ def line(katz_deli)
    puts "The line is currently empty."
     else
 #I'm enumerating the katz_deli array to get the name of the customer and index to calculate the customer's position on line.
-    katz_deli.each_with_index do |name, index|
+       katz_deli.each_with_index do |name, index|
 #I'm using shorthand operator += to signify saying my variable "length" is equal to variable "index" + variable "name"
 
 #Additionally, I'm interpolating my variables below to make my code clean, and legible.
@@ -28,7 +28,7 @@ def take_a_number (katz_deli, name)
   katz_deli << name
   if katz_deli == 0
     puts "The line is currently empty."
-  else
+       else
 # .length returns number of names in katz_deli array.
     puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
   end
@@ -39,7 +39,7 @@ end
 def now_serving(katz_deli)
   if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
-  else
+      else
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   end
