@@ -1,12 +1,11 @@
-#goal of my program is to create a computerized queue to keep track of customers (Ada, Kent, Grace) and improve productivity
+#goal of my program is to create a computerized queue to keep track of customers and improve productivity
 #breaking down my code via 3 methods (line method, take_a_number method, now_serving method)
 
 #this is the beginning of the day. Currently there are no customers, so an empty katz's is represented by an empty array.
 katz_deli = []
 
 #line method - shows everyone their current place in line
-#I'm defining my line method using the argument "katz_deli."" I'm using an if else conditional statement here to tell my program to make a decision.
- def line(katz_deli)
+#I'm defining my line method using the argument "katz_deli.""
  deli_line = "The line is currently:"
 #i'm using a string class method (.length) here to calculate the character length of the array "katz_deli."
   if katz_deli.length == 0
