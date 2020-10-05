@@ -23,7 +23,7 @@ end
 
 
 #Next, I'm building a new method that a new customer will use when entering the deli.
-#defining our take_a_number method with 2 arguments (katz_deli, name) Name signifies the name of the custoemr. In this Program would be Ada, Grace, Kent
+#defining our take_a_number method with 2 arguments (katz_deli, name) Name signifies the name of the custoemr.
 #using the shovel operator << lets me add the name of customers to the end of the array.
 def take_a_number (katz_deli, name)
    katz_deli << name
