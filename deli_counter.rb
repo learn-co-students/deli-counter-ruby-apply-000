@@ -20,6 +20,16 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."      #Output string of name added. katz_deli.length used to identify last position in line
 end
 
+
+# $line_length = 0
+# def take_a_number(katz_deli)                 Re-program for technical track interview
+#     $line_length += 1
+#     katz_deli << line_length
+#     puts "Welcome. You are number #{$line_length} in line."
+# end
+
+
+
 def now_serving(katz_deli)
   if katz_deli == []
     puts "There is nobody waiting to be served!"
