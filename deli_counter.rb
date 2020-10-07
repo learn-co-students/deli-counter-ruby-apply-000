@@ -73,7 +73,7 @@ end
 #     if @deli_line == []
 #       puts "There is nobody waiting to be served!"
 #     else
-#       puts "Currently serving #{katz_deli.first}."
+#       puts "Currently serving #{@deli_line.first}."
 #       @deli_line = @deli_line.shift
 #     end
 #   end
