@@ -20,10 +20,10 @@ def take_a_number(katz_deli, customer)
 end
 
 def now_serving(katz_deli)
-  if katz_deli.empty? == TRUE
+  if katz_deli.empty?
     puts "There is nobody waiting to be served!"
     
-  elsif katz_deli.empty? == FALSE
+  elsif !(katz_deli.empty?)
     puts "Currently serving #{katz_deli.shift}."
   end
 end
