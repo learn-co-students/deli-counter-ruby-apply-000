@@ -15,7 +15,7 @@ def line(people_array)
 end
 
 def take_a_number(people_array,person_name)
-  people_array << person_name
+  people_array << person_name 
   puts "Welcome, #{person_name}. You are number #{people_array.length} in line."
 end
 
@@ -27,3 +27,4 @@ def now_serving(people_array)
     people_array.shift
   end
 end
+
