@@ -5,8 +5,8 @@ def line(katz_deli)
     deli_line = "The line is currently:"
     counter = 0
     katz_deli.each do |person|
-    counter += 1
-    deli_line += " #{counter}. #{person}"
+      counter += 1
+      deli_line += " #{counter}. #{person}"
     end
   puts deli_line
   else
