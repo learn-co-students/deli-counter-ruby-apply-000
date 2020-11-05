@@ -5,7 +5,7 @@ def line(deli)
   if deli == []
     puts "The line is currently empty."
 
-  else deli.each do |name|
+  else deli.each do |name| #block parameter
       customers << " #{counter}. #{name}"
       counter += 1
       end
@@ -13,16 +13,16 @@ def line(deli)
     end
 end
 
-def take_a_number(line, new_customer)
-  line << new_customer
-  puts "Welcome, #{new_customer}. You are number #{line.length} in line."
+def take_a_number(deli, new_customer)
+  deli << new_customer
+  puts "Welcome, #{new_customer}. You are number #{deli.length} in line."
 end
 
-def now_serving(line)
-  if line.length == 0
+def now_serving(deli)
+  if deli.length == 0
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{line[0]}."
-    line.shift
+    puts "Currently serving #{deli[0]}."
+    deli.shift
   end
 end
