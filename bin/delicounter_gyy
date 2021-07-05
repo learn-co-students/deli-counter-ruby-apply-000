@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/deli_counter_gyy.rb'
+
+katz_deli = ["Amy", "Joe"]
+order = []
+MENU = [
+  ["Hamburger", 5],
+  ["Cheeseburger", 6],
+  ["French Fries", 3]
+]
+
+puts "Hi. Welcome to Katz Deli!"
+interact(katz_deli, order, MENU)
+
+
+=begin
+# ----- beginning of OO code (still in progress) -----
+katz_deli = ["Amy", "Joe"]
+order = []
+
+customer = Deli_Counter.new(katz_deli, order)
+puts "Hi. Welcome to Katz Deli!"
+customer.interact
+# ----- end of OO code -----
+=end
