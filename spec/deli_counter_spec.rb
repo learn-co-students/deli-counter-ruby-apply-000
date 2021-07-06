@@ -74,3 +74,25 @@ describe 'Deli Counter' do
   end
 
 end
+
+katz_deli = []
+other_deli = ["Logan", "Avi", "Spencer"] 
+another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"] 
+
+
+
+
+
+take_a_number(katz_deli, "Ada")
+take_a_number(katz_deli, "Grace")
+take_a_number(katz_deli, "Kent")
+line(other_deli)
+now_serving(katz_deli)
+line(another_deli)
+take_a_number(katz_deli, "Matz")
+
+now_serving(katz_deli)
+line(katz_deli)
+
+
+
