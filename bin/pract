@@ -1,0 +1,31 @@
+require_relative './deli_counter.rb'
+
+deli = []
+
+def options
+  puts "\nWelcome to the deli!\nHere are your options:\n - Take a number\n - Currently serving\n - What is my number?\n - View line"
+end
+
+while true
+  options
+  choice = gets.strip
+  if choice == "Take a number"
+    puts "What is your name?"
+    name = gets.strip
+    take_a_number(deli,name)
+  elsif choice == "Currently serving"
+    now_serving(deli)
+  elsif choice == "View line"
+    line(deli)
+  elsif choice == "What is my number?"
+   puts "Please enter your name"
+   name = gets.strip
+   puts "You are number #{deli.index(name)+1}"
+  elsif choice == "Options"
+    options
+  elsif choice == "End"
+    false
+  else
+    puts options
+  end
+end
