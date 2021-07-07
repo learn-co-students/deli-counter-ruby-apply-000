@@ -9,3 +9,6 @@ require_relative '../deli_counter'
 RSpec.configure do |config|
   # config here
 end
+
+
+
